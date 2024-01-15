@@ -1,6 +1,21 @@
 .container {
   margin-bottom: var(--spacer);
-  margin-top: calc(var(--spacer) * 3);
+  margin-top: calc(var(--spacer) * -2);
+}
+
+.background {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: calc(var(--spacer) * 16);
+  background: url('/images/flex4res-bg.webp');
+  background-size: cover;
+  background-position: bottom;
+  z-index: -1;
+}
+
+.paragraphs {
+  margin-top: calc(var(--spacer) * 4);
 }
 
 @media screen and (min-width: 54rem) {
@@ -19,8 +34,15 @@
 }
 
 .teaser {
-  margin-bottom: calc(var(--spacer) * 2);
-  text-align: center;
+  padding: calc(var(--spacer) * 4) 0;
+}
+
+.teaser h1 {
+  margin: 0;
+}
+
+.teaser h2 {
+  color: var(--color-secondary);
 }
 
 .paragraph > * {

@@ -38,7 +38,7 @@ export default function Page({
           isSearchPage={isSearchPage}
         />
         {isAssetPage && !allowExternalContent && <ExternalContentWarning />}
-        {title && !noPageHeader && (
+        {title && !noPageHeader && !isHome && (
           <PageHeader
             title={isHome ? title : <>{title.slice(0, 400)}</>}
             center={headerCenter}

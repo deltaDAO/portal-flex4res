@@ -11,14 +11,14 @@ const cx = classNames.bind(styles)
 interface HomeContentData {
   teaser: {
     title: string
-    text: string
+    tagline: string
   }
   paragraphs: {
     title: string
     body: string
     cta: string
     ctaTo: string
-    image: string
+    image?: string
   }[]
 }
 
@@ -27,9 +27,10 @@ export default function HomeContent(): ReactElement {
 
   return (
     <div className={styles.container}>
+      <div className={styles.background}></div>
       <div className={styles.teaser}>
-        <h2>{teaser.title}</h2>
-        <Markdown text={teaser.text} />
+        <h1>{teaser.title}</h1>
+        <h2>{teaser.tagline}</h2>
       </div>
       <div className={styles.paragraphs}>
         {paragraphs.map((paragraph, i) => (
@@ -42,10 +43,12 @@ export default function HomeContent(): ReactElement {
             }
           >
             <div className={styles.interactivity}>
-              <InteractiveModalImage
-                src={paragraph.image}
-                alt={paragraph.title}
-              />
+              {paragraph.image && (
+                <InteractiveModalImage
+                  src={paragraph.image}
+                  alt={paragraph.title}
+                />
+              )}
             </div>
             <div className={styles.content}>
               <h2>{paragraph.title}</h2>

@@ -78,9 +78,8 @@ export default function HomePage(): ReactElement {
 
   return (
     <>
-      <Ecosystem />
-      <TopSales title="Publishers With Most Sales" />
       <HomeContent />
+      <TopSales title="Publishers With Most Sales" />
       {hasFeaturedAssets() && (
         <>
           {queryFeatured.map((section, i) => (
