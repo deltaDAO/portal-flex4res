@@ -4,7 +4,7 @@
 :root {
   --color-primary: var(--brand-blue);
   --color-secondary: var(--brand-green);
-  --color-highlight: var(--brand-blue);
+  --color-highlight: var(--brand-green);
 
   /* Only use these vars for most color referencing for easy light/dark mode */
   --font-color-text: var(--brand-black);
@@ -78,13 +78,13 @@
   /* Buttons */
   --button-border-radius: var(--border-radius);
   --button-font-color: var(--brand-white);
-  --button-background: var(--font-color-light);
+  --button-background: var(--brand-green);
   --button-hover-font-color: var(--brand-white);
-  --button-hover-background: var(--font-color-light);
+  --button-hover-background: var(--brand-green);
   --button-active-font-color: var(--brand-white);
   --button-active-background: var(--font-color-light);
   --button-primary-font-color: var(--brand-white);
-  --button-primary-background: var(--brand-gradient);
+  --button-primary-background: var(--brand-green);
   --button-ghost-font-color: var(--color-primary);
   --button-ghost-background: var(--brand-white);
   --button-text-font-color: var(--color-highlight);
@@ -121,9 +121,9 @@
   /* Filter and sort */
   --filter-title-color: var(--font-color-heading);
   --filter-title-font-size: var(--font-size-title);
-  --filter-type-color: var(--color-secondary);
+  --filter-type-color: var(--font-color-text);
   --filter-type-font-size: var(--font-size-large);
-  --filter-label-color: var(--color-secondary);
+  --filter-label-color: var(--font-color-text);
   --filter-label-font-size: var(--font-size-base);
   --filter-clear-color: var(--color-primary);
   --filter-clear-hover-color: var(--color-highlight);
