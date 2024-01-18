@@ -9,7 +9,16 @@ module.exports = {
     ],
     'datatokens.address': []
   },
-  featured: [],
+  featured: [
+    {
+      title: 'Featured Service Offerings',
+      assets: [
+        'did:op:bd74d6a281ba414de2b4d8ee4087277575f95676bd74e20ee9e2960c9c38d7c5', // ToolCondition-Algorithm - EuProGigant Validation Platform
+        'did:op:a3da777fd3711da36d5e1e5904a8c074b6e8df51549db2b6c8a5bc7ec3ab60cf', // CO2-Estimate Algorithm - EuProGigant Validation Platform
+        'did:op:df64a2b05a8de027a94c0f4a99af63650667d2e5e723bebc9229a368ac452447' // Data Part No. 598
+      ]
+    }
+  ],
   verifiedWallets: {
     '0x628677D9A9d93a913182fa04893Da0ce4E6570Ee': 'deltaDAO AG',
     '0xf8A493af0e72C2C62651Bf7b7d1a006806Fb646f': 'deltaDAO AG',
