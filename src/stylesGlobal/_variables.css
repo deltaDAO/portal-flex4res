@@ -13,11 +13,11 @@
   --background-body: var(--brand-white);
   --background-body-transparent: rgba(255, 255, 255, 0.8);
   --background-content: var(--brand-white);
-  --background-highlight: var(--brand-grey-lighter);
+  --background-highlight: var(--brand-grey-light);
   --border-color: var(--brand-grey-lighter);
   --box-shadow-color: rgba(0, 0, 0, 0.05);
-  --checkbox-selected-background: var(--brand-blue);
-  --bookmark-icon-fill-color: var(--brand-grey-lighter);
+  --checkbox-selected-background: var(--brand-green);
+  --bookmark-icon-fill-color: var(--brand-grey-light);
   --bookmark-icon-selected-fill-color: var(--brand-green);
   --link-font-color: var(--color-highlight);
   --nft-refresh-icon-fill: var(--brand-white);
@@ -110,7 +110,7 @@
   --teaser-border-radius: var(--border-radius);
   --teaser-border-size: var(--border-size-sm);
   --teaser-border-color: var(--border-color);
-  --teaser-box-shadow: 0 6px 17px 0 var(--box-shadow-color);
+  --teaser-box-shadow: none;
   --teaser-hover-box-shadow: 0 10px 25px 0 var(--box-shadow-color);
 
   /* Pagination component */
@@ -119,9 +119,9 @@
   --pagination-hover-font-color: var(--color-highlight);
 
   /* Filter and sort */
-  --filter-title-color: var(--font-color-heading);
+  --filter-title-color: var(--font-color-text);
   --filter-title-font-size: var(--font-size-title);
-  --filter-type-color: var(--font-color-text);
+  --filter-type-color: var(--font-color-heading);
   --filter-type-font-size: var(--font-size-large);
   --filter-label-color: var(--font-color-text);
   --filter-label-font-size: var(--font-size-base);
@@ -160,8 +160,8 @@
   --line-height: 1.6;
 
   --spacer: 2rem;
-  --border-radius-sm: 2px;
-  --border-radius: 0.2rem;
+  --border-radius-sm: 0.3rem;
+  --border-radius: 0.3rem;
   --border-size-sm: 1px;
   --border-size: 2px;
 

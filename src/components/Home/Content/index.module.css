@@ -3,19 +3,8 @@
   margin-top: calc(var(--spacer) * -2);
 }
 
-.background {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: calc(var(--spacer) * 16);
-  background: url('/images/flex4res-bg.webp');
-  background-size: cover;
-  background-position: bottom;
-  z-index: -1;
-}
-
-.paragraphs {
-  margin-top: calc(var(--spacer) * 4);
+.centered {
+  text-align: center;
 }
 
 @media screen and (min-width: 54rem) {
@@ -34,7 +23,23 @@
 }
 
 .teaser {
-  padding: calc(var(--spacer) * 4) 0;
+  position: relative;
+  padding: calc(var(--spacer) * 5) 0 calc(var(--spacer) * 6) 0;
+}
+
+/* Teaser full-width background image */
+.teaser:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 100vw;
+  background: url('/images/flex4res-bg.webp');
+  background-size: cover;
+  background-position: bottom;
+  z-index: -1;
 }
 
 .teaser h1 {

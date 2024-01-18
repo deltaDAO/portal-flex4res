@@ -17,5 +17,16 @@
       "ctaTo": "https://flex4res.eu",
       "image": "/images/flex4res-concept.webp"
     }
+  ],
+  "kpis": [
+    {
+      "label": "Published Assets"
+    },
+    {
+      "label": "Overall Sales"
+    },
+    {
+      "label": "Distinct Providers"
+    }
   ]
 }
