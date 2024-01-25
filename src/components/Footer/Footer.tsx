@@ -3,13 +3,12 @@ import styles from './Footer.module.css'
 import Markdown from '@shared/Markdown'
 import Links from './Links'
 import { useMarketMetadata } from '@context/MarketMetadata'
-import DeltaDaoLogo from '@images/deltaDAO_Logo_small_RGB_white.svg'
 import Container from '@components/@shared/atoms/Container'
 
 export default function Footer(): ReactElement {
   const { siteContent } = useMarketMetadata()
   const { siteTitle, footer } = siteContent
-  const { copyright, subtitle } = footer
+  const { copyright, notice } = footer
 
   return (
     <footer className={styles.footer}>
@@ -22,8 +21,12 @@ export default function Footer(): ReactElement {
             rel="noopener noreferrer"
           >
             <div className={styles.main}>
-              <DeltaDaoLogo />
-              <p className={styles.subtitle}>{subtitle}</p>
+              <img
+                className={styles.logo}
+                alt={`Logo`}
+                src={`/images/EU-co-funded.png`}
+              />
+              <Markdown className={styles.notice} text={notice} />
             </div>
           </a>
         </div>

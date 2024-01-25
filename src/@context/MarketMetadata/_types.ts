@@ -67,7 +67,7 @@ export interface SiteContent {
     ctd: string
   }
   footer: {
-    subtitle: string
+    notice: string
     copyright: string
     privacyTitle: string
     content: {
