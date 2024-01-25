@@ -98,10 +98,15 @@ export default function HomePage(): ReactElement {
 
       <ProjectPartners />
 
-      <div className={styles.poweredby}>
+      <a
+        href="https://delta-dao.com"
+        target="_blank"
+        className={styles.poweredby}
+        rel="noreferrer"
+      >
         <p>Powered by</p>
         <LogoDeltaDAO />
-      </div>
+      </a>
     </>
   )
 }
