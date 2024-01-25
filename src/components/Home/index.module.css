@@ -18,3 +18,20 @@
 .allAssetsButton {
   margin-top: var(--spacer);
 }
+
+.poweredby {
+  text-align: center;
+  margin: calc(var(--spacer) * 4) auto 0;
+}
+
+.poweredby svg {
+  width: 12rem;
+  height: 6rem;
+  margin: 0 auto;
+}
+
+.poweredby p {
+  font-weight: bold;
+  color: var(--color-primary);
+  margin: 0;
+}

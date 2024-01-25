@@ -1,5 +1,6 @@
 import { ReactElement, useEffect, useState } from 'react'
 import Button from '@shared/atoms/Button'
+import LogoDeltaDAO from '@images/deltaDAO_Logo_small_RGB_positiv.svg'
 import { generateBaseQuery, getFilterTerm } from '@utils/aquarius'
 import { useUserPreferences } from '@context/UserPreferences'
 import { SortTermOptions } from '../../@types/aquarius/SearchQuery'
@@ -8,7 +9,6 @@ import styles from './index.module.css'
 import { useAddressConfig } from '@hooks/useAddressConfig'
 import TopSales from './TopSales'
 import HomeContent from './Content'
-import Ecosystem from './Ecosystem'
 import { ProjectPartners } from './ProjectPartners'
 
 interface FeaturedSection {
@@ -95,7 +95,13 @@ export default function HomePage(): ReactElement {
       <SectionQueryResult title="Recently Published" query={queryRecent} />
       <SectionQueryResult title="Most Sales" query={queryMostSales} />
       <AllAssetsButton />
+
       <ProjectPartners />
+
+      <div className={styles.poweredby}>
+        <p>Powered by</p>
+        <LogoDeltaDAO />
+      </div>
     </>
   )
 }
