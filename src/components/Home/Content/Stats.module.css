@@ -19,9 +19,11 @@
 
 .content {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   gap: var(--spacer);
+  padding: var(--spacer);
 }
 
 .stat {
@@ -29,7 +31,7 @@
   text-align: center;
   border-radius: var(--border-radius);
   background: var(--brand-grey-light);
-  flex: 1 1 0;
+  width: 100%;
 }
 
 .stat h4 {
@@ -40,4 +42,10 @@
 
 .stat span {
   font-weight: var(--font-weight-bold);
+}
+
+@media screen and (min-width: 60rem) {
+  .content {
+    flex-direction: row;
+  }
 }
