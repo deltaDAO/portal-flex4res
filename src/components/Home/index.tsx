@@ -9,6 +9,7 @@ import { useAddressConfig } from '@hooks/useAddressConfig'
 import TopSales from './TopSales'
 import HomeContent from './Content'
 import Ecosystem from './Ecosystem'
+import { ProjectPartners } from './ProjectPartners'
 
 interface FeaturedSection {
   title: string
@@ -94,6 +95,7 @@ export default function HomePage(): ReactElement {
       <SectionQueryResult title="Recently Published" query={queryRecent} />
       <SectionQueryResult title="Most Sales" query={queryMostSales} />
       <AllAssetsButton />
+      <ProjectPartners />
     </>
   )
 }
