@@ -24,20 +24,20 @@
   gap: var(--spacer);
 }
 
-.kpi {
+.stat {
   padding: var(--spacer);
   text-align: center;
   border-radius: var(--border-radius);
-  background: var(--border-color);
+  background: var(--brand-grey-light);
   flex-grow: 1;
 }
 
-.kpi h4 {
+.stat h4 {
   color: var(--color-secondary);
   font-size: var(--font-size-h1);
   margin-bottom: calc(var(--spacer) / 3);
 }
 
-.kpi span {
+.stat span {
   font-weight: var(--font-weight-bold);
 }

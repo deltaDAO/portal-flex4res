@@ -13,7 +13,7 @@
   --background-body: var(--brand-white);
   --background-body-transparent: rgba(255, 255, 255, 0.8);
   --background-content: var(--brand-white);
-  --background-highlight: var(--brand-grey-light);
+  --background-highlight: var(--brand-grey-lighter);
   --border-color: var(--brand-grey-lighter);
   --box-shadow-color: rgba(0, 0, 0, 0.05);
   --checkbox-selected-background: var(--brand-green);

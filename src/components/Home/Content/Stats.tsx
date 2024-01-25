@@ -12,10 +12,10 @@ export default function Stats({
       <h2>Key Dates</h2>
       <div className={styles.content}>
         {content &&
-          content.map((kpi) => (
-            <div className={styles.kpi} key={`KPI_Item_${kpi.label}`}>
-              <h4>{kpi.value}</h4>
-              <span>{kpi.label}</span>
+          content.map((stat) => (
+            <div className={styles.stat} key={`stat_item_${stat.label}`}>
+              <h4>{stat.value}</h4>
+              <span>{stat.label}</span>
             </div>
           ))}
       </div>
