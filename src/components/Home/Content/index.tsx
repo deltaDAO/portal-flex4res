@@ -5,7 +5,7 @@ import content from '../../../../content/pages/home/content.json'
 import Markdown from '@components/@shared/Markdown'
 import Button from '@components/@shared/atoms/Button'
 import InteractiveModalImage from '@components/@shared/atoms/InteractiveModalImage'
-import KPIs from './KPIs'
+import Stats from './Stats'
 
 const cx = classNames.bind(styles)
 
@@ -21,13 +21,14 @@ interface HomeContentData {
     ctaTo: string
     image?: string
   }[]
-  kpis: {
+  stats: {
     label: string
+    value: number
   }[]
 }
 
 export default function HomeContent(): ReactElement {
-  const { paragraphs, teaser, kpis }: HomeContentData = content
+  const { paragraphs, teaser, stats }: HomeContentData = content
 
   return (
     <div className={styles.container}>
@@ -67,7 +68,7 @@ export default function HomeContent(): ReactElement {
           </div>
         ))}
       </div>
-      <KPIs content={kpis} />
+      <Stats content={stats} />
     </div>
   )
 }

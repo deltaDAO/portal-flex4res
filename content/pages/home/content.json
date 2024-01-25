@@ -18,15 +18,18 @@
       "image": "/images/flex4res-concept.webp"
     }
   ],
-  "kpis": [
+  "stats": [
     {
-      "label": "Published Assets"
+      "label": "Million Euro funding amount",
+      "value": 8
     },
     {
-      "label": "Overall Sales"
+      "label": "project partner",
+      "value": 17
     },
     {
-      "label": "Distinct Providers"
+      "label": "use cases",
+      "value": 4
     }
   ]
 }
