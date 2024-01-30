@@ -1,6 +1,6 @@
 .container {
   margin-bottom: var(--spacer);
-  margin-top: calc(var(--spacer) * -2);
+  margin-top: calc(var(--spacer) * 2);
 }
 
 .centered {
@@ -14,6 +14,7 @@
     align-items: center;
     gap: var(--spacer);
     text-align: right;
+    margin-top: var(--spacer);
   }
 
   .paragraph.mirror {

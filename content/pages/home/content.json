@@ -6,13 +6,13 @@
   "paragraphs": [
     {
       "title": "The Manufacturing Ecosystem",
-      "body": "Manufacturing industries continually face the challenge of delivering high-quality products at high production rates while minimizing non-value-adding activities. The recent COVID-19 pandemic is causing manufacturers to rethink their global supply chains and the flexibility of their production sites to achieve a resilient manufacturing.",
+      "body": "In the rapidly evolving digital landscape, challenges like the COVID-19 pandemic have forced manufacturers to rethink not only their supply chains but also the adaptability of their production facilities. Achieving resilient manufacturing is crucial to maintain high-quality production at efficient rates while reducing non-value-adding activities.",
       "cta": "Learn More",
       "ctaTo": "https://flex4res.eu"
     },
     {
       "title": "Flex4Res Concept",
-      "body": "The European research project Flex4Res (Data spaces for FLEXible production lines and supply chains FOR RESilient manufacturing) aims to improve the resilience of supply chains. Therefore, it provides an open platform for secure and sovereign data exchange along the supply chain to support production networks’ reconfiguration for resilient manufacturing value chains. Additional toolboxes for resilience assessment and reconfiguration planning enable stakeholders across the supply chain to manage different types of disruptions by quickly and efficiently reconfiguring supply chains and production lines.",
+      "body": "The European research project Flex4Res, which stands for Data spaces for FLEXible production lines and supply chains FOR RESilient manufacturing, concentrates on making supply chains more resilient. To achieve this, Flex4Res develops an open platform for secure and sovereign data exchange along the supply chain that supports the reconfiguration of production networks. It also develops two toolboxes: one for resilience assessment and one for reconfiguration planning. These toolboxes allow different players in the supply chain to effectively and rapidly adjust to various disruptions, both in their supply chains and production processes.",
       "cta": "Learn More",
       "ctaTo": "https://flex4res.eu",
       "image": "/images/flex4res-concept.webp"

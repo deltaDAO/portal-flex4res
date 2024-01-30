@@ -37,24 +37,21 @@ export default function HomeContent(): ReactElement {
           <div
             key={paragraph.title}
             className={
-              i % 2 === 1
+              i % 2 === 0
                 ? cx({ paragraph: true, mirror: true })
                 : styles.paragraph
             }
           >
-            {paragraph.image && (
-              <div className={styles.interactivity}>
+            <div className={styles.interactivity}>
+              {paragraph.image && (
                 <InteractiveModalImage
                   src={paragraph.image}
                   alt={paragraph.title}
                 />
-              </div>
-            )}
-            <div
-              className={`${styles.content} ${
-                paragraph.image ? '' : styles.centered
-              }`}
-            >
+              )}
+            </div>
+
+            <div className={styles.content}>
               <h2>{paragraph.title}</h2>
               <Markdown text={paragraph.body} />
               <Button href={paragraph.ctaTo} style="primary">
