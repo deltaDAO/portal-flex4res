@@ -10,6 +10,7 @@ import { useAddressConfig } from '@hooks/useAddressConfig'
 import TopSales from './TopSales'
 import HomeContent from './Content'
 import { ProjectPartners } from './ProjectPartners'
+import OnboardingSection from '../@shared/Onboarding'
 
 interface FeaturedSection {
   title: string
@@ -30,7 +31,7 @@ function AllAssetsButton(): ReactElement {
 }
 
 export default function HomePage(): ReactElement {
-  const { chainIds } = useUserPreferences()
+  const { chainIds, showOnboardingModule } = useUserPreferences()
   const { featured, hasFeaturedAssets } = useAddressConfig()
 
   const [queryFeatured, setQueryFeatured] = useState<FeaturedSection[]>([])
@@ -79,6 +80,7 @@ export default function HomePage(): ReactElement {
 
   return (
     <>
+      {showOnboardingModule && <OnboardingSection />}
       <HomeContent />
       <TopSales title="Publishers With Most Sales" />
       {hasFeaturedAssets() && (
