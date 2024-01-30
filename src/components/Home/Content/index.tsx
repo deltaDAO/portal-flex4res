@@ -32,10 +32,6 @@ export default function HomeContent(): ReactElement {
 
   return (
     <div className={styles.container}>
-      <div className={styles.teaser}>
-        <h1>{teaser.title}</h1>
-        <h2>{teaser.tagline}</h2>
-      </div>
       <div className={styles.paragraphs}>
         {paragraphs.map((paragraph, i) => (
           <div

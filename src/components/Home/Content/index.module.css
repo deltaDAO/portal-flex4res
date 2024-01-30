@@ -22,34 +22,6 @@
   }
 }
 
-.teaser {
-  position: relative;
-  padding: calc(var(--spacer) * 5) 0 calc(var(--spacer) * 6) 0;
-}
-
-/* Teaser full-width background image */
-.teaser:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 100%;
-  width: 100vw;
-  background: url('/images/flex4res-bg.webp');
-  background-size: cover;
-  background-position: bottom;
-  z-index: -1;
-}
-
-.teaser h1 {
-  margin: 0;
-}
-
-.teaser h2 {
-  color: var(--color-secondary);
-}
-
 .paragraph > * {
   flex: 1 1 0;
   margin-top: calc(var(--spacer) * 2);
