@@ -20,7 +20,6 @@
 .place {
   font-size: var(--font-size-large);
   margin-right: calc(var(--spacer) / 2);
-  color: var(--font-color-text);
 }
 
 .name {

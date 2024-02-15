@@ -91,7 +91,7 @@
 .active {
   display: block;
   padding: calc(var(--spacer) / 8) 0;
-  text-transform: none;
+  text-transform: uppercase;
   transform: none;
   position: relative;
   z-index: 1;

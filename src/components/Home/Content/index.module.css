@@ -1,10 +1,6 @@
 .container {
   margin-bottom: var(--spacer);
-  margin-top: calc(var(--spacer) * 2);
-}
-
-.centered {
-  text-align: center;
+  margin-top: calc(var(--spacer) * 3);
 }
 
 @media screen and (min-width: 54rem) {
@@ -14,13 +10,17 @@
     align-items: center;
     gap: var(--spacer);
     text-align: right;
-    margin-top: var(--spacer);
   }
 
   .paragraph.mirror {
     flex-direction: row-reverse;
     text-align: left;
   }
+}
+
+.teaser {
+  margin-bottom: calc(var(--spacer) * 2);
+  text-align: center;
 }
 
 .paragraph > * {

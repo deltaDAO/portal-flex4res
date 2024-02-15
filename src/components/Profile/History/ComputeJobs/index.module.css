@@ -1,6 +1,6 @@
 .status {
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .computeTableContainer {

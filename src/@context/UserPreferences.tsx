@@ -32,10 +32,6 @@ interface UserPreferencesValue {
   setAutomationWalletJSON: (encryptedWallet: string) => void
   automationWalletMode: AUTOMATION_MODES
   setAutomationWalletMode: (mode: AUTOMATION_MODES) => void
-  onboardingStep: number
-  setOnboardingStep: (step: number) => void
-  showOnboardingModule: boolean
-  setShowOnboardingModule: (value: boolean) => void
 }
 
 const UserPreferencesContext = createContext(null)
@@ -95,16 +91,6 @@ function UserPreferencesProvider({
       localStorage?.automationWalletMode || AUTOMATION_MODES.SIMPLE
     )
 
-  const [onboardingStep, setOnboardingStep] = useState<number>(
-    localStorage?.onboardingStep || 0
-  )
-
-  const [showOnboardingModule, setShowOnboardingModule] = useState<boolean>(
-    localStorage?.showOnboardingModule === undefined
-      ? true
-      : localStorage?.showOnboardingModule
-  )
-
   // Write values to localStorage on change
   useEffect(() => {
     setLocalStorage({
@@ -116,9 +102,7 @@ function UserPreferencesProvider({
       showPPC,
       allowExternalContent,
       automationWalletJSON: automationWallet,
-      automationWalletMode,
-      onboardingStep,
-      showOnboardingModule
+      automationWalletMode
     })
   }, [
     chainIds,
@@ -129,9 +113,7 @@ function UserPreferencesProvider({
     showPPC,
     allowExternalContent,
     automationWallet,
-    automationWalletMode,
-    onboardingStep,
-    showOnboardingModule
+    automationWalletMode
   ])
 
   // Set ocean.js log levels, default: Error
@@ -200,11 +182,7 @@ function UserPreferencesProvider({
           automationWalletJSON: automationWallet,
           setAutomationWalletJSON: setAutomationWallet,
           automationWalletMode,
-          setAutomationWalletMode,
-          onboardingStep,
-          setOnboardingStep,
-          showOnboardingModule,
-          setShowOnboardingModule
+          setAutomationWalletMode
         } as UserPreferencesValue
       }
     >

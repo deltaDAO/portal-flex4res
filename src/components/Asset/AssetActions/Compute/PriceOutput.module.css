@@ -7,16 +7,12 @@
   border-bottom: 1px solid var(--border-color);
   padding-bottom: calc(var(--spacer) / 3);
   text-align: center;
-  color: var(--font-color-text);
+  color: var(--color-secondary);
   font-size: var(--font-size-small);
 }
 
 .priceComponent > * {
   display: inline-block !important;
-}
-
-.priceComponent strong {
-  color: var(--color-secondary);
 }
 
 .calculation {

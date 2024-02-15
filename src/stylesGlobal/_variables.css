@@ -3,22 +3,22 @@
 
 :root {
   --color-primary: var(--brand-blue);
-  --color-secondary: var(--brand-green);
-  --color-highlight: var(--brand-green);
+  --color-secondary: var(--brand-grey-light);
+  --color-highlight: var(--brand-blue);
 
   /* Only use these vars for most color referencing for easy light/dark mode */
-  --font-color-text: var(--brand-black);
-  --font-color-heading: var(--brand-blue);
-  --font-color-light: var(--color-blue);
+  --font-color-text: var(--brand-grey);
+  --font-color-heading: var(--brand-black);
+  --font-color-light: var(--color-secondary);
   --background-body: var(--brand-white);
   --background-body-transparent: rgba(255, 255, 255, 0.8);
   --background-content: var(--brand-white);
-  --background-highlight: var(--brand-grey-lighter);
+  --background-highlight: var(--brand-grey-dimmed);
   --border-color: var(--brand-grey-lighter);
   --box-shadow-color: rgba(0, 0, 0, 0.05);
-  --checkbox-selected-background: var(--brand-green);
-  --bookmark-icon-fill-color: var(--brand-grey-light);
-  --bookmark-icon-selected-fill-color: var(--brand-green);
+  --checkbox-selected-background: var(--brand-blue);
+  --bookmark-icon-fill-color: var(--brand-grey-lighter);
+  --bookmark-icon-selected-fill-color: var(--brand-grey);
   --link-font-color: var(--color-highlight);
   --nft-refresh-icon-fill: var(--brand-white);
   --badge-background-color: var(--color-primary);
@@ -27,13 +27,13 @@
   /* Menubar */
   --menu-logo-color: var(--brand-gaia-x-blue);
   --menu-logo-color-hover: var(--brand-gaia-x-blue);
-  --menu-logo-size-width-sm: 10rem;
+  --menu-logo-size-width-sm: 7.5rem;
   --menu-logo-size-height-sm: 3.5rem;
-  --menu-logo-size-width-lg: 10rem;
+  --menu-logo-size-width-lg: 7.5rem;
   --menu-logo-size-height-lg: 3.5rem;
   --menu-font-color: var(--color-primary);
-  --menu-font-color-active: var(--color-secondary);
-  --menu-font-color-hover: var(--color-secondary);
+  --menu-font-color-active: var(--font-color-heading);
+  --menu-font-color-hover: var(--color-primary);
   --menu-active-indicator-color: var(--brand-blue);
   --menu-mobile-navigation-border-size: var(--border-size-sm);
   --menu-mobile-navigation-border-color: var(--brand-grey-lighter);
@@ -43,7 +43,7 @@
   --menu-icon-fill-color: var(--color-primary);
   --menu-icon-fill-color-hover: var(--color-primary);
   --menu-title-font-size: var(--font-size-h4);
-  --menu-link-font-size: var(--font-size-large);
+  --menu-link-font-size: var(--font-size-base);
   --menu-link-font-weight: var(--font-weight-bold);
   --menu-link-font-weight-active: var(--font-weight-bold);
   --menu-caret-size: var(--font-size-small);
@@ -51,9 +51,9 @@
   --menu-network-badge-font-color: var(--brand-white);
 
   /* Footer */
-  --footer-background-color: var(--brand-green);
+  --footer-background-color: var(--brand-grey);
   --footer-font-color: var(--brand-white);
-  --footer-font-color-highlight: var(--brand-black);
+  --footer-font-color-highlight: var(--brand-cyan);
   --footer-link-category-font-color: var(--brand-white);
 
   /* Homepage */
@@ -78,13 +78,13 @@
   /* Buttons */
   --button-border-radius: var(--border-radius);
   --button-font-color: var(--brand-white);
-  --button-background: var(--brand-green);
+  --button-background: var(--font-color-light);
   --button-hover-font-color: var(--brand-white);
-  --button-hover-background: var(--brand-green);
+  --button-hover-background: var(--font-color-light);
   --button-active-font-color: var(--brand-white);
   --button-active-background: var(--font-color-light);
   --button-primary-font-color: var(--brand-white);
-  --button-primary-background: var(--brand-green);
+  --button-primary-background: var(--brand-gradient);
   --button-ghost-font-color: var(--color-primary);
   --button-ghost-background: var(--brand-white);
   --button-text-font-color: var(--color-highlight);
@@ -100,45 +100,48 @@
   --box-template-border-radius: var(--border-radius);
   --box-template-border-size: var(--border-size-sm);
   --box-template-border-color: var(--border-color);
-  --box-template-box-shadow: none;
+  --box-template-box-shadow: 0 6px 17px 0 var(--box-shadow-color);
   --box-template-hover-box-shadow: 0 10px 25px 0 var(--box-shadow-color);
 
   /* Asset teaser */
-  --teaser-font-color: var(--brand-black);
+  --teaser-font-color: var(--color-secondary);
   --teaser-title-font-color: var(--font-color-heading);
   --teaser-background: var(--background-content);
   --teaser-border-radius: var(--border-radius);
   --teaser-border-size: var(--border-size-sm);
   --teaser-border-color: var(--border-color);
-  --teaser-box-shadow: none;
+  --teaser-box-shadow: 0 6px 17px 0 var(--box-shadow-color);
   --teaser-hover-box-shadow: 0 10px 25px 0 var(--box-shadow-color);
 
   /* Pagination component */
-  --pagination-font-color: var(--brand-black);
-  --pagination-selected-font-color: var(--color-secondary);
+  --pagination-font-color: var(--color-secondary);
+  --pagination-selected-font-color: var(--font-color-heading);
   --pagination-hover-font-color: var(--color-highlight);
 
   /* Filter and sort */
-  --filter-title-color: var(--font-color-text);
-  --filter-title-font-size: var(--font-size-title);
-  --filter-type-color: var(--font-color-heading);
-  --filter-type-font-size: var(--font-size-large);
-  --filter-label-color: var(--font-color-text);
-  --filter-label-font-size: var(--font-size-base);
-  --filter-clear-color: var(--color-primary);
-  --filter-clear-hover-color: var(--color-highlight);
+  --filter-font-color: var(--color-secondary);
+  --filter-hover-font-color: var(--font-color-text);
+  --filter-selected-font-color: var(--background-body);
+  --filter-background: var(--background-content);
+  --filter-selected-background: var(--font-color-text);
+  --filter-border-radius: var(--border-radius);
+  --filter-border-size: var(--border-size-sm);
+  --filter-border-color: var(--border-color);
+  --filter-selected-border-color: var(--background-body);
+  --filter-clear-font-color: var(--color-secondary);
+  --filter-clear-hover-font-color: var(--color-highlight);
 
   /* Confetti */
-  --confetti-color-one: var(--brand-blue);
-  --confetti-color-two: var(--brand-green);
-  --confetti-color-three: var(--brand-black);
+  --confetti-color-one: var(--brand-blue-light);
+  --confetti-color-two: var(--brand-cyan);
+  --confetti-color-three: var(--brand-violet);
   --confetti-color-four: var(--brand-grey-light);
   --confetti-color-five: var(--brand-grey-lighter);
 
-  --font-family-base: 'Asap', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif;
-  --font-family-heading: 'Asap', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif;
+  --font-family-base: 'Titillium Web', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-family-heading: 'Titillium Web', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Helvetica, Arial, sans-serif;
   --font-family-monospace: 'Fira Code', 'Fira Mono', Menlo, Monaco, Consolas,
     'Courier New', monospace;
 
@@ -155,13 +158,13 @@
   --font-size-h3: 1.7rem;
   --font-size-h4: 1.3rem;
   --font-size-h5: 1.1rem;
-  --font-weight-base: 400;
-  --font-weight-bold: 700;
+  --font-weight-base: 500;
+  --font-weight-bold: 600;
   --line-height: 1.6;
 
   --spacer: 2rem;
-  --border-radius-sm: 0.3rem;
-  --border-radius: 0.3rem;
+  --border-radius-sm: 2px;
+  --border-radius: 0.2rem;
   --border-size-sm: 1px;
   --border-size: 2px;
 

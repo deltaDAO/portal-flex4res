@@ -5,7 +5,6 @@ import Markdown from '@shared/Markdown'
 import SearchBar from '@components/Header/SearchBar'
 import BrandLogo from '@images/brand-logo.svg'
 import GaiaXLogo from '@images/gaia-x-logo.svg'
-import Container from '../atoms/Container'
 
 const cx = classNames.bind(styles)
 
@@ -29,17 +28,34 @@ export default function PageHeader({
 
   return (
     <header className={styleClasses}>
-      <Container className={isHome && styles.homeTitleContainer}>
-        <h1 className={styles.title}>{title}</h1>
-        {description && (
-          <Markdown text={description} className={styles.description} />
-        )}
-        {showSearch && (
-          <div className={styles.search}>
-            <SearchBar placeholder="Search for service offerings" />
+      {isHome ? (
+        <div className={styles.homeTitleContainer}>
+          <BrandLogo />
+          {description && (
+            <Markdown text={description} className={styles.subtitle} />
+          )}
+          <div className={styles.logoContainer}>
+            <h4 className={styles.logoContainerTitle}>powered by</h4>
+            <a
+              href="https://gaia-x.eu/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <GaiaXLogo />
+            </a>
           </div>
-        )}
-      </Container>
+        </div>
+      ) : (
+        <h1 className={styles.title}>{title}</h1>
+      )}
+      {description && !isHome && (
+        <Markdown text={description} className={styles.description} />
+      )}
+      {showSearch && (
+        <div className={styles.search}>
+          <SearchBar placeholder="Search for service offerings" />
+        </div>
+      )}
     </header>
   )
 }

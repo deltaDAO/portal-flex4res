@@ -71,7 +71,7 @@
 
 .description {
   margin-left: var(--spacer);
-  color: var(--font-color-text);
+  color: var(--color-secondary);
   margin-bottom: 0;
 }
 

@@ -4,7 +4,7 @@ import EUROeLogo from '@images/EUROe_Symbol_Black.svg'
 import OceanLogo from '@images/logo.svg'
 import { useMarketMetadata } from '@context/MarketMetadata'
 
-export const tokenLogos = {
+const tokenLogos = {
   EUROe: {
     image: <EUROeLogo />,
     url: 'https://dev.euroe.com/img/EUROe_Symbol_Black.svg'

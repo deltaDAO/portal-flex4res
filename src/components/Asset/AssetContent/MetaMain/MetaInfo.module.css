@@ -1,6 +1,5 @@
 .wrapper {
   padding: calc(var(--spacer) / 2);
-  color: var(--color-primary);
 }
 
 .assetType {

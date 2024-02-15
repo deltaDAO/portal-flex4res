@@ -1,6 +1,5 @@
 import { ReactElement, useEffect, useState } from 'react'
 import Button from '@shared/atoms/Button'
-import LogoDeltaDAO from '@images/deltaDAO_Logo_small_RGB_positiv.svg'
 import { generateBaseQuery, getFilterTerm } from '@utils/aquarius'
 import { useUserPreferences } from '@context/UserPreferences'
 import { SortTermOptions } from '../../@types/aquarius/SearchQuery'
@@ -9,8 +8,7 @@ import styles from './index.module.css'
 import { useAddressConfig } from '@hooks/useAddressConfig'
 import TopSales from './TopSales'
 import HomeContent from './Content'
-import { ProjectPartners } from './ProjectPartners'
-import OnboardingSection from '../@shared/Onboarding'
+import Ecosystem from './Ecosystem'
 
 interface FeaturedSection {
   title: string
@@ -31,7 +29,7 @@ function AllAssetsButton(): ReactElement {
 }
 
 export default function HomePage(): ReactElement {
-  const { chainIds, showOnboardingModule } = useUserPreferences()
+  const { chainIds } = useUserPreferences()
   const { featured, hasFeaturedAssets } = useAddressConfig()
 
   const [queryFeatured, setQueryFeatured] = useState<FeaturedSection[]>([])
@@ -80,9 +78,9 @@ export default function HomePage(): ReactElement {
 
   return (
     <>
-      {showOnboardingModule && <OnboardingSection />}
-      <HomeContent />
+      <Ecosystem />
       <TopSales title="Publishers With Most Sales" />
+      <HomeContent />
       {hasFeaturedAssets() && (
         <>
           {queryFeatured.map((section, i) => (
@@ -97,18 +95,6 @@ export default function HomePage(): ReactElement {
       <SectionQueryResult title="Recently Published" query={queryRecent} />
       <SectionQueryResult title="Most Sales" query={queryMostSales} />
       <AllAssetsButton />
-
-      <ProjectPartners />
-
-      <a
-        href="https://delta-dao.com"
-        target="_blank"
-        className={styles.poweredby}
-        rel="noreferrer"
-      >
-        <p>Powered by</p>
-        <LogoDeltaDAO />
-      </a>
     </>
   )
 }
