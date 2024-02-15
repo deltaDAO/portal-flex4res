@@ -3,6 +3,7 @@ import FormHelp from '@shared/FormInput/Help'
 import Price from './Price'
 import Fees from './Fees'
 import styles from './Fixed.module.css'
+import stylesIndex from './index.module.css'
 
 export default function Fixed({
   approvedBaseTokens,
@@ -15,7 +16,7 @@ export default function Fixed({
     <>
       <FormHelp>{content.info}</FormHelp>
 
-      <h4 className={styles.title}>Price</h4>
+      <h4 className={stylesIndex.title}>Price</h4>
 
       <Price approvedBaseTokens={approvedBaseTokens} />
       <Fees tooltips={content.tooltips} />

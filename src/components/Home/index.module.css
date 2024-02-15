@@ -4,12 +4,12 @@
 
 .section h3 {
   font-size: var(--font-size-large);
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .section h3 span {
   font-size: var(--font-size-small);
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-family: var(--font-family-base);
   font-weight: var(--font-weight-base);
 }
@@ -17,4 +17,22 @@
 .section [class*='button'],
 .allAssetsButton {
   margin-top: var(--spacer);
+}
+
+.poweredby {
+  display: block;
+  text-align: center;
+  margin: calc(var(--spacer) * 4) auto 0;
+}
+
+.poweredby svg {
+  width: 12rem;
+  height: 6rem;
+  margin: 0 auto;
+}
+
+.poweredby p {
+  font-weight: bold;
+  color: var(--color-primary);
+  margin: 0;
 }

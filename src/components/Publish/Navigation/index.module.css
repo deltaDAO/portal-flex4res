@@ -5,6 +5,7 @@
   scrollbar-width: none;
   border-bottom: 1px solid var(--border-color);
   background-color: var(--background-highlight);
+  color: var(--color-primary);
 }
 
 @media (min-width: 40rem) {
@@ -55,7 +56,7 @@
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--color-primary);
   margin-right: calc(var(--spacer) / 4);
 }
 
@@ -67,8 +68,8 @@
   left: 100%;
   top: 1rem;
   width: 50%;
+  background: var(--color-primary);
   height: 1px;
-  background: var(--border-color);
 }
 
 .navigation li:last-child:after {
@@ -77,19 +78,18 @@
 
 .current:before {
   color: var(--background-content);
-  background: var(--font-color-heading);
+  background: var(--color-primary);
   border-color: transparent;
 }
 
 .navigation .success:before {
   content: '✓';
-  color: var(--brand-white);
+  color: var(--background-content);
   background: var(--brand-alert-green);
   border-color: transparent;
 }
 
 .success.current:before {
-  background: var(--font-color-heading);
-  color: var(--brand-alert-green);
-  border-color: var(--brand-alert-green);
+  color: var(--background-content);
+  background: var(--color-primary);
 }
