@@ -1,15 +1,15 @@
-import { ReactElement, useState } from 'react'
-import { toast } from 'react-toastify'
-import { OnboardingStep } from '..'
-import StepBody from '../StepBody'
-import StepHeader from '../StepHeader'
-import content from '../../../../../content/onboarding/steps/importCustomTokens.json'
-import { useAccount, useNetwork, useProvider } from 'wagmi'
-import { GEN_X_NETWORK_ID } from 'chains.config'
-import { addTokenToWallet } from '@utils/wallet'
-import { getErrorMessage } from '@utils/onboarding'
 import { tokenLogos } from '@components/Header/Wallet/AddTokenList'
 import { useMarketMetadata } from '@context/MarketMetadata'
+import { getErrorMessage } from '@utils/onboarding'
+import { addTokenToWallet } from '@utils/wallet'
+import { getSupportedChainIds } from 'chains.config'
+import { ReactElement, useState } from 'react'
+import { toast } from 'react-toastify'
+import { useAccount, useNetwork, useProvider } from 'wagmi'
+import { OnboardingStep } from '..'
+import content from '../../../../../content/onboarding/steps/importCustomTokens.json'
+import StepBody from '../StepBody'
+import StepHeader from '../StepHeader'
 
 export default function ImportCustomTokens(): ReactElement {
   const { title, subtitle, body, image }: OnboardingStep = content
@@ -31,7 +31,7 @@ export default function ImportCustomTokens(): ReactElement {
   ) => {
     setLoading(true)
     try {
-      if (chain?.id !== GEN_X_NETWORK_ID) throw new Error()
+      if (!getSupportedChainIds().includes(chain?.id)) throw new Error()
 
       await addTokenToWallet(
         tokenAddress,
