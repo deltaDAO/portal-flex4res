@@ -10,44 +10,35 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
-  gap: var(--spacer);
   margin: auto;
-  margin-bottom: var(--spacer);
+  gap: var(--spacer);
 }
 
 .siteTitle {
   text-align: left;
   margin-bottom: 0;
+  font-weight: bold;
 }
 
 .main {
-  margin-top: auto;
-  position: relative;
+  margin: auto auto calc(var(--spacer) * 2);
   text-align: left;
   color: var(--footer-font-color);
+  max-width: 30rem;
 }
 
-.main svg {
-  width: 15rem;
-  height: 6rem !important;
-  margin-left: -0.7rem;
+.main img {
+  margin-left: 0;
   margin-top: auto;
-}
-
-.subtitle {
-  position: absolute;
-  width: max-content;
-  top: 4rem;
-  left: 5rem;
 }
 
 .copyright a {
   color: var(--footer-font-color-highlight);
 }
 
-@media screen and (min-width: 55rem) {
+@media screen and (min-width: 65rem) {
   .footer {
     padding: calc(var(--spacer) * 2);
     padding-bottom: calc(var(--spacer) / 2);

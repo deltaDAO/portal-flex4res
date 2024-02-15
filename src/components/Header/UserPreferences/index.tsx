@@ -6,6 +6,7 @@ import Debug from './Debug'
 import Caret from '@images/caret.svg'
 import ExternalContent from './ExternalContent'
 import AutomationWalletMode from './AutomationWalletMode'
+import Onboarding from './Onboarding'
 
 export default function UserPreferences(): ReactElement {
   return (
@@ -14,6 +15,9 @@ export default function UserPreferences(): ReactElement {
         <ul className={styles.preferencesDetails}>
           <li>
             <ExternalContent />
+          </li>
+          <li>
+            <Onboarding />
           </li>
           <li>
             <AutomationWalletMode />
