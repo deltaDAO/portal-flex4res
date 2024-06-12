@@ -63,12 +63,6 @@ const chains = [
     DFStrategyV1: '0x98FBBB6523441b960E4D1d9A98601332092F4aB6',
     veFeeEstimate: '0xCFeF55c6ae4d250586e293f29832967a04A9087d',
     providerAddress: '0x68C24FA5b2319C81b34f248d1f928601D2E5246B'
-  },
-  {
-    chainId: 80001,
-    isDefault: false,
-    metadataCacheUri: 'https://aquarius510.v4.delta-dao.com',
-    providerUri: 'https://provider.dev-v4.mumbai.delta-dao.com'
   }
 ]
 
