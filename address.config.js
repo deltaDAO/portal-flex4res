@@ -6,6 +6,10 @@ module.exports = {
       '0x9dfbda23b65efB1c836828D74a96eB8528A60f3C',
       '0xb2AF8b92bFaC5299Cb6EDEf16150BFD1d4d26a93',
       '0x3dB4E0b1fC6072271BF51e9a0CC17E3c7C4C99f5'
+      '0xDfB0A2BDC779f6053c7ee92601D867ec03A7b47c'// PTW TU Darmstadt
+      '0x194Ce4c180aE0878A05D2D7FEc16716dF942B4c4'// Savvy
+      '0x28553327C3e469a2De5D53faaE2d27C0c0Fa4d1b'// Ideko
+      '0x28553327C3e469a2De5D53faaE2d27C0c0Fa4d1b'// PTW TU Darmstadt
     ],
     'datatokens.address': []
   },
