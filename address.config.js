@@ -13,7 +13,8 @@ module.exports = {
       '0x345d301C97eb25468fDd7eDfb1B6e9C7f0B9F784', // Univsersität Siegen
       '0xEa458168651e7D254408Ea941BAf4210de1564E1', // Hans Berg
       '0x6Ec302A62ed554878b9e7862BF1bd5cdd22d03c7', // Intrasoft
-      '0xA6FEd8D39cF98C6f7d4c31Da790c9c94e837c3ca' // LMS
+      '0xA6FEd8D39cF98C6f7d4c31Da790c9c94e837c3ca', // LMS
+      '0xD63fFbB727dc1Bf681F727b78b5F4C738E01f6Db' // Beia 
     ],
     'datatokens.address': []
   },
