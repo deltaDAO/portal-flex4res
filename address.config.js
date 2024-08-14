@@ -14,7 +14,8 @@ module.exports = {
       '0xEa458168651e7D254408Ea941BAf4210de1564E1', // Hans Berg
       '0x6Ec302A62ed554878b9e7862BF1bd5cdd22d03c7', // Intrasoft
       '0xA6FEd8D39cF98C6f7d4c31Da790c9c94e837c3ca', // LMS
-      '0xD63fFbB727dc1Bf681F727b78b5F4C738E01f6Db' // Beia 
+      '0xD63fFbB727dc1Bf681F727b78b5F4C738E01f6Db', // Beia 
+      '0xD9BAB8E6279CE41C2bC3f1D44ceF855235e0CdB7' // Gühring
     ],
     'datatokens.address': []
   },
@@ -22,9 +23,9 @@ module.exports = {
     {
       title: 'Featured Service Offerings',
       assets: [
-        'did:op:bd74d6a281ba414de2b4d8ee4087277575f95676bd74e20ee9e2960c9c38d7c5', // ToolCondition-Algorithm - EuProGigant Validation Platform
-        'did:op:a3da777fd3711da36d5e1e5904a8c074b6e8df51549db2b6c8a5bc7ec3ab60cf', // CO2-Estimate Algorithm - EuProGigant Validation Platform
-        'did:op:df64a2b05a8de027a94c0f4a99af63650667d2e5e723bebc9229a368ac452447' // Data Part No. 598
+        'did:op:c524a2ad8aab175315cdbb106289114079637529af988874c1a31e9a179e4540', // ToolCondition-Algorithm - EuProGigant Validation Platform
+        'did:op:291ac52240e7c422aa8e67f9369efa7b30cbdc3f494922f1b646a8091a97fdb6', // CO2-Estimate Algorithm - EuProGigant Validation Platform
+        'did:op:ec6abd810b3f3d9f3cf7fbbfd3462e289ee9700f0a1ca492adaf6a8c7d0bdce7' // Workpiece 882
       ]
     }
   ],
