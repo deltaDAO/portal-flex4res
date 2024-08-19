@@ -25,6 +25,10 @@
       "name": "Ecosystem",
       "subItems": [
         {
+          "name": "Pontus-X",
+          "link": "https://portal.pontus-x.eu/"
+        },
+        {
           "name": "EuProGigant",
           "link": "https://portal.euprogigant.io/",
           "description": "EuProGigant is the first funded binational industrial project with the practical implementation of the Gaia-X principles.",
@@ -40,7 +44,7 @@
         },
         {
           "name": "Cooperants",
-          "link": "https://cooperants.pontus-x.eu/",
+          "link": "https://federator.cooperants.info/marketplace",
           "description": "The world's only collaborative alliance in the Aeronautics and space sector that solves pressing digital collaboration problems by creating a common data space.",
           "image": "cooperants-logo.webp",
           "category": "space"
@@ -81,18 +85,27 @@
           "category": "science"
         },
         {
-          "name": "Clinical Insights Exchange",
-          "link": "https://cix.triall.io/",
-          "description": "A federated data platform to change clinical data assets and analytics services in a trusted, privacy-friendly environment.",
-          "image": "clinical-insights-exchange-logo.webp",
-          "category": "health"
-        },
-        {
           "name": "UdL Research Data Space",
           "link": "https://dataspace.angliru.udl.cat/",
           "description": "An open research platform following the FAIR guiding principles of findability, accessibility, interoperability and reusability, while guaranteeing data sovereignty.",
           "image": "udl-logo.webp",
           "category": "science"
+        },
+        {
+          "name": "Agrifood TEF",
+          "link": "http://dataspace.agrifoodtef.eu/",
+          "description": "The European Testing and Experimentation Facilities for Agrifood Innovation.",
+          "image": "agrifoodTEF.webp",
+          "category": "agriculture",
+          "isLive": true
+        },
+        {
+          "name": "Polish Agriculture Data Space",
+          "link": "https://dataspaces.psnc.pl/",
+          "description": "An open data space platform for sharing and marketing agri-related datasets guaranteeing data sovereignty.",
+          "image": "PSNC.webp",
+          "category": "agriculture",
+          "isLive": true
         }
       ]
     }
