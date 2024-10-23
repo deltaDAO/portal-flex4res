@@ -78,26 +78,11 @@
           "category": "science"
         },
         {
-          "name": "EnergySHR",
-          "link": "https://www.energyshr.nl/",
-          "description": "A platform for sharing (SHR) datasets and AI algorithms that contribute to solving challenges of the energy transition.",
-          "image": "energy-shr-logo.webp",
-          "category": "science"
-        },
-        {
           "name": "UdL Research Data Space",
           "link": "https://dataspace.angliru.udl.cat/",
           "description": "An open research platform following the FAIR guiding principles of findability, accessibility, interoperability and reusability, while guaranteeing data sovereignty.",
           "image": "udl-logo.webp",
           "category": "science"
-        },
-        {
-          "name": "Agrifood TEF",
-          "link": "http://dataspace.agrifoodtef.eu/",
-          "description": "The European Testing and Experimentation Facilities for Agrifood Innovation.",
-          "image": "agrifoodTEF.webp",
-          "category": "agriculture",
-          "isLive": true
         },
         {
           "name": "Polish Agriculture Data Space",
