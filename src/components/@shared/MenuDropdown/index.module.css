@@ -34,8 +34,8 @@ svg.caret {
 [aria-expanded='true'] .menuItem,
 [aria-expanded='true'] .caret,
 [aria-expanded='true'] svg.caret {
-  fill: var(--menu-font-color-hover);
-  color: var(--menu-font-color-hover);
+  fill: var(--menu-caret-active-fill-color);
+  color: var(--menu-caret-active-fill-color);
 }
 
 [aria-expanded='true'] .menuItem:after {
