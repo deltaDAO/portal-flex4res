@@ -3,7 +3,7 @@
   "siteTagline": "Data spaces for flexible production lines & supply chains",
   "siteUrl": "https://flex4res.pontus-x.eu",
   "siteImage": "/share.png",
-  "copyright": "All Rights Reserved. Powered by [Ocean Protocol](https://oceanprotocol.com). Built by [deltaDAO](https://delta-dao.com).",
+  "copyright": "All Rights Reserved. Powered by [Gaia-X](https://gaia-x.eu/), [Oasis](https://oasisprotocol.org/) and [Ocean Enterprise](https://www.oceanenterprise.io/). Built by [deltaDAO](https://delta-dao.com).",
   "menu": [
     {
       "name": "Catalogue",
@@ -18,6 +18,10 @@
       "link": "/verify"
     },
     {
+      "name": "Faucet",
+      "link": "/faucet"
+    },
+    {
       "name": "Log",
       "link": "https://explorer.pontus-x.eu/"
     },
@@ -26,21 +30,23 @@
       "subItems": [
         {
           "name": "Pontus-X",
-          "link": "https://portal.pontus-x.eu/"
+          "link": "https://www.pontus-x.eu/"
         },
         {
           "name": "EuProGigant",
           "link": "https://portal.euprogigant.io/",
-          "description": "EuProGigant is the first funded binational industrial project with the practical implementation of the Gaia-X principles.",
+          "description": "Gaia-X Lighthouse EuProGigant is the first funded binational industrial project with the practical implementation of the Gaia-X principles.",
           "image": "euprogigant-logo.webp",
-          "category": "manufacturing"
+          "category": "manufacturing",
+          "isLive": true
         },
         {
-          "name": "GX4M moveID",
+          "name": "GX4FM moveID",
           "link": "https://portal.moveid.eu/",
-          "description": "moveID aims to develop a decentralized digital mobility identity infrastructure for Europe.",
-          "image": "moveid-logo.webp",
-          "category": "mobility"
+          "description": "Gaia-X Lighthouse Gaia-X 4 Future Mobility aims to develop a decentralized digital mobility identity infrastructure for Europe.",
+          "image": "gx4fm_moveid.webp",
+          "category": "mobility",
+          "isLive": true
         },
         {
           "name": "Cooperants",
@@ -62,7 +68,24 @@
           "link": "https://airbus.pontus-x.eu/",
           "description": "For those who make this world a safer place. We pioneer defense and space for their mission success.",
           "image": "airbus-logo.webp",
-          "category": "space"
+          "category": "manufacturing",
+          "isLive": true
+        },
+        {
+          "name": "FIWARE",
+          "link": "https://fiware-marketplace-a4eqd.ondigitalocean.app/",
+          "description": "A curated framework of Open Source Platform components to accelerate the development of Smart Solutions.",
+          "image": "logo-fiware-full.webp",
+          "category": "smart city",
+          "isLive": true
+        },
+        {
+          "name": "Berlin State Library",
+          "link": "https://sbb.pontus-x.eu/",
+          "description": "Explore the Open Science Ecosystem, a collaboration of libraries, universities, and science pioneers under Gaia-X principles for limitless shared knowledge.",
+          "image": "sbb-logo.webp",
+          "category": "language models",
+          "isLive": true
         },
         {
           "name": "Car Repair 4.0",
@@ -73,32 +96,20 @@
           "isLive": true
         },
         {
-          "name": "Service-Meister",
-          "link": "https://servicemeister.pontus-x.eu/",
-          "description": "An AI-based Service Ecosystem for Technical Service in the Age of Industry 4.0.",
-          "image": "service-meister-logo.webp",
-          "category": "manufacturing"
-        },
-        {
           "name": "Future Mobility Marketplace",
           "link": "https://marketplace.future-mobility-alliance.org/",
           "description": "Find or publish datasets and AI algorithms for solving challenges in mobility.",
           "image": "fmdm-logo.webp",
-          "category": "mobility"
-        },
-        {
-          "name": "Berlin State Library",
-          "link": "https://sbb.pontus-x.eu/",
-          "description": "Explore the Open Science Ecosystem, a collaboration of libraries, universities, and science pioneers under Gaia-X principles for limitless shared knowledge.",
-          "image": "sbb-logo.webp",
-          "category": "science"
+          "category": "mobility",
+          "isLive": true
         },
         {
           "name": "UdL Research Data Space",
           "link": "https://dataspace.angliru.udl.cat/",
           "description": "An open research platform following the FAIR guiding principles of findability, accessibility, interoperability and reusability, while guaranteeing data sovereignty.",
           "image": "udl-logo.webp",
-          "category": "science"
+          "category": "agriculture",
+          "isLive": true
         },
         {
           "name": "Polish Agriculture Data Space",
@@ -107,6 +118,39 @@
           "image": "PSNC.webp",
           "category": "agriculture",
           "isLive": true
+        },
+        {
+          "name": "Service-Meister",
+          "link": "https://servicemeister.pontus-x.eu/",
+          "description": "An AI-based Service Ecosystem for Technical Service in the Age of Industry 4.0.",
+          "image": "service-meister-logo.webp",
+          "category": "AI",
+          "isLive": true
+        },
+        {
+          "name": "deltaDAO AI marketplace",
+          "link": "https://market.delta-dao.com/",
+          "description": "With deltaDAO's AI Marketplace, you have the freedom to decide how your AI service is offered. By keeping your AI private, you retain full control and do not disclose your valuable IP.",
+          "image": "deltadao-logo.webp",
+          "category": "AI",
+          "isLive": false
+        }
+      ]
+    },
+    {
+      "name": "Resources",
+      "subItems": [
+        {
+          "name": "Documentation",
+          "link": "https://docs.pontus-x.eu/"
+        },
+        {
+          "name": "Landing Page",
+          "link": "https://www.pontus-x.eu/"
+        },
+        {
+          "name": "nautilus",
+          "link": "https://nautilus.delta-dao.com/"
         }
       ]
     }
@@ -119,7 +163,7 @@
   "footer": {
     "notice": "Co-funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Health and Digital Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.\n\nThis project has received funding from the European Union‘s Horizon Europe research and innovation programme under grant agreement No 101091903",
     "copyright": "Built by [deltaDAO](https://delta-dao.com)",
-    "privacyTitle": "Privacy",
+    "privacyTitle": "Legal",
     "content": [
       {
         "title": "External",
