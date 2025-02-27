@@ -18,7 +18,8 @@ module.exports = {
       '0xA6FEd8D39cF98C6f7d4c31Da790c9c94e837c3ca', // LMS
       '0xD63fFbB727dc1Bf681F727b78b5F4C738E01f6Db', // Beia
       '0xBA87B2E7F71013Fe6561a877928EA265531B06d1', // TU Wien
-      '0x9f4ceE0eBD03a1e9E4DcffaF876873d7a3e9595c' // AMIDS
+      '0x9f4ceE0eBD03a1e9E4DcffaF876873d7a3e9595c', // AMIDS
+      '0x6d006671dA78354C200B03eF5E58F948977362cD' // A1
     ],
     'datatokens.address': []
   },
