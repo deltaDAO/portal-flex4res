@@ -3234,20 +3234,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            3
-            <tspan x="924.643px 942.323px " y="850.78px 850.78px ">
-              52
-            </tspan>
-          </text>
-          <text
-            x="969.856px"
-            y="850.78px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {fraesen.pzD25 || ''} s
           </text>
           <text
             x="773.26px"
@@ -3273,20 +3260,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            4
-            <tspan x="924.643px 942.323px " y="898.8px 898.8px ">
-              10
-            </tspan>
-          </text>
-          <text
-            x="969.856px"
-            y="898.8px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {fraesen.pzD40 || ''} s
           </text>
           <text
             x="773.26px"
@@ -3312,20 +3286,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            1
-            <tspan x="922.903px 940.606px " y="948.43px 948.43px ">
-              76
-            </tspan>
-          </text>
-          <text
-            x="968.092px"
-            y="948.43px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {fraesen.zzD25 || ''} s
           </text>
           <text
             x="773.26px"
@@ -3351,20 +3312,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36.024px'
             }}
           >
-            2
-            <tspan x="923.003px 940.717px " y="998.024px 998.024px ">
-              05
-            </tspan>
-          </text>
-          <text
-            x="968.222px"
-            y="998.024px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36.024px'
-            }}
-          >
-            s
+            {fraesen.zzD40 || ''} s
           </text>
           <text
             x="773.26px"
@@ -3387,55 +3335,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            4
-            <tspan
-              x="845.563px 863.686px 891.776px 897.875px "
-              y="1047.65px 1047.65px 1047.65px 1047.65px "
-            >
-              5min
-            </tspan>
-          </text>
-          <text
-            x="928.01px"
-            y="1047.65px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '24px'
-            }}
-          >
-            a
-            <tspan
-              x="940.092px 944.158px 948.225px "
-              y="1047.65px 1047.65px 1047.65px "
-            >
-              lle
-            </tspan>
-          </text>
-          <text
-            x="967.85px"
-            y="1047.65px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '24px'
-            }}
-          >
-            3
-          </text>
-          <text
-            x="985.442px"
-            y="1047.65px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '24px'
-            }}
-          >
-            S
-            <tspan
-              x="1000.18px 1010.92px 1023px 1027.07px 1037.8px 1049.88px 1055.29px 1067.37px "
-              y="1047.65px 1047.65px 1047.65px 1047.65px 1047.65px 1047.65px 1047.65px 1047.65px "
-            >
-              chichten
-            </tspan>
+            {fraesen.rz || ''}
           </text>
           <text
             x="773.26px"
@@ -3461,20 +3361,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            7
-            <tspan x="866.542px " y="1097.26px ">
-              6
-            </tspan>
-          </text>
-          <text
-            x="894.652px"
-            y="1097.26px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            %
+            {fraesen.oee || ''} %
           </text>
           <text
             x="773.26px"
@@ -3489,7 +3376,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="795.621px 811.971px 830.342px 836.69px 853.039px 871.411px 879.762px 898.133px 916.504px 924.856px 933.208px "
               y="1146.86px 1146.86px 1146.86px 1146.86px 1146.86px 1146.86px 1146.86px 1146.86px 1146.86px 1146.86px 1146.86px "
             >
-              chichten: 3
+              chichten: {fraesen.schichten || ''}
             </tspan>
           </text>
           <text
@@ -3513,14 +3400,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            2
-            <tspan
-              x="858.451px 866.446px 888.451px 896.446px 914.46px 930.454px "
-              y="1196.47px 1196.47px 1196.47px 1196.47px 1196.47px 1196.47px "
-            >
-              {' '}
-              Stück
-            </tspan>
+            {fraesen.pm || ''} Stück
           </text>
           <text
             x="773.26px"
@@ -3543,26 +3423,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            4
-            <tspan x="846.301px " y="1246.08px ">
-              8
-            </tspan>
-          </text>
-          <text
-            x="873.52px"
-            y="1246.08px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            S
-            <tspan
-              x="894.931px 902.333px 919.754px 935.154px "
-              y="1246.08px 1246.08px 1246.08px 1246.08px "
-            >
-              tück
-            </tspan>
+            {fraesen.lg || ''} Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,-188.667)">
@@ -4025,20 +3886,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            3
-            <tspan x="924.643px 942.323px " y="850.78px 850.78px ">
-              52
-            </tspan>
-          </text>
-          <text
-            x="969.856px"
-            y="850.78px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {fraesen.pzD25 || ''} s
           </text>
           <text
             x="773.26px"
@@ -4064,20 +3912,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            4
-            <tspan x="924.643px 942.323px " y="898.8px 898.8px ">
-              10
-            </tspan>
-          </text>
-          <text
-            x="969.856px"
-            y="898.8px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {fraesen.pzD40 || ''} s
           </text>
           <text
             x="773.26px"
@@ -4103,20 +3938,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            1
-            <tspan x="922.903px 940.606px " y="948.43px 948.43px ">
-              76
-            </tspan>
-          </text>
-          <text
-            x="968.092px"
-            y="948.43px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {fraesen.zzD25 || ''} s
           </text>
           <text
             x="773.26px"
@@ -4142,20 +3964,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36.024px'
             }}
           >
-            2
-            <tspan x="923.003px 940.717px " y="998.024px 998.024px ">
-              05
-            </tspan>
-          </text>
-          <text
-            x="968.222px"
-            y="998.024px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36.024px'
-            }}
-          >
-            s
+            {fraesen.zzD40 || ''} s
           </text>
           <text
             x="773.26px"
@@ -4178,55 +3987,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            4
-            <tspan
-              x="845.563px 863.686px 891.776px 897.875px "
-              y="1047.65px 1047.65px 1047.65px 1047.65px "
-            >
-              5min
-            </tspan>
-          </text>
-          <text
-            x="928.01px"
-            y="1047.65px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '24px'
-            }}
-          >
-            a
-            <tspan
-              x="940.092px 944.158px 948.225px "
-              y="1047.65px 1047.65px 1047.65px "
-            >
-              lle
-            </tspan>
-          </text>
-          <text
-            x="967.85px"
-            y="1047.65px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '24px'
-            }}
-          >
-            3
-          </text>
-          <text
-            x="985.442px"
-            y="1047.65px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '24px'
-            }}
-          >
-            S
-            <tspan
-              x="1000.18px 1010.92px 1023px 1027.07px 1037.8px 1049.88px 1055.29px 1067.37px "
-              y="1047.65px 1047.65px 1047.65px 1047.65px 1047.65px 1047.65px 1047.65px 1047.65px "
-            >
-              chichten
-            </tspan>
+            {fraesen.rz || ''}
           </text>
           <text
             x="773.26px"
@@ -4252,20 +4013,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            7
-            <tspan x="866.542px " y="1097.26px ">
-              6
-            </tspan>
-          </text>
-          <text
-            x="894.652px"
-            y="1097.26px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            %
+            {fraesen.oee || ''} %
           </text>
           <text
             x="773.26px"
@@ -4280,7 +4028,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="795.621px 811.971px 830.342px 836.69px 853.039px 871.411px 879.762px 898.133px 916.504px 924.856px 933.208px "
               y="1146.86px 1146.86px 1146.86px 1146.86px 1146.86px 1146.86px 1146.86px 1146.86px 1146.86px 1146.86px 1146.86px "
             >
-              chichten: 3
+              chichten: {fraesen.schichten || ''}
             </tspan>
           </text>
           <text
@@ -4304,14 +4052,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            2
-            <tspan
-              x="858.451px 866.446px 888.451px 896.446px 914.46px 930.454px "
-              y="1196.47px 1196.47px 1196.47px 1196.47px 1196.47px 1196.47px "
-            >
-              {' '}
-              Stück
-            </tspan>
+            {fraesen.pm || ''} Stück
           </text>
           <text
             x="773.26px"
@@ -4334,26 +4075,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            4
-            <tspan x="846.301px " y="1246.08px ">
-              8
-            </tspan>
-          </text>
-          <text
-            x="873.52px"
-            y="1246.08px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            S
-            <tspan
-              x="894.931px 902.333px 919.754px 935.154px "
-              y="1246.08px 1246.08px 1246.08px 1246.08px "
-            >
-              tück
-            </tspan>
+            {fraesen.lg || ''} Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
