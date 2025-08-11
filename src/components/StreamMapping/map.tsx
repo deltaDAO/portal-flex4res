@@ -5079,20 +5079,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            1
-            <tspan x="1471.83px " y="742.2px ">
-              5
-            </tspan>
-          </text>
-          <text
-            x="1499.28px"
-            y="742.2px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {waschen.zz || ''} s
           </text>
           <text
             x="1403.16px"
@@ -5107,7 +5094,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="1425.52px 1441.87px 1460.24px 1466.59px 1482.94px 1501.31px 1509.66px 1528.03px 1546.4px 1554.76px 1563.11px "
               y="807.38px 807.38px 807.38px 807.38px 807.38px 807.38px 807.38px 807.38px 807.38px 807.38px 807.38px "
             >
-              chichten: 1
+              chichten: {waschen.schichten || ''}
             </tspan>
           </text>
           <text
@@ -5123,7 +5110,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="1427.3px 1445.46px 1461.61px 1469.75px 1487.91px 1506.08px 1514.22px 1522.36px "
               y="872.59px 872.59px 872.59px 872.59px 872.59px 872.59px 872.59px 872.59px "
             >
-              üsten: 0
+              üsten: {waschen.ruesten || ''}
             </tspan>
           </text>
           <text
@@ -5147,26 +5134,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            4
-            <tspan x="1476.2px " y="937.8px ">
-              8
-            </tspan>
-          </text>
-          <text
-            x="1503.42px"
-            y="937.8px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            S
-            <tspan
-              x="1524.83px 1532.23px 1549.65px 1565.05px "
-              y="937.8px 937.8px 937.8px 937.8px "
-            >
-              tück
-            </tspan>
+            {waschen.lg || ''} Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -5469,20 +5437,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            1
-            <tspan x="1471.83px " y="742.2px ">
-              5
-            </tspan>
-          </text>
-          <text
-            x="1499.28px"
-            y="742.2px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {waschen.zz || ''} s
           </text>
           <text
             x="1403.16px"
@@ -5497,7 +5452,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="1425.52px 1441.87px 1460.24px 1466.59px 1482.94px 1501.31px 1509.66px 1528.03px 1546.4px 1554.76px 1563.11px "
               y="807.38px 807.38px 807.38px 807.38px 807.38px 807.38px 807.38px 807.38px 807.38px 807.38px 807.38px "
             >
-              chichten: 1
+              chichten: {waschen.schichten || ''}
             </tspan>
           </text>
           <text
@@ -5513,7 +5468,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="1427.3px 1445.46px 1461.61px 1469.75px 1487.91px 1506.08px 1514.22px 1522.36px "
               y="872.59px 872.59px 872.59px 872.59px 872.59px 872.59px 872.59px 872.59px "
             >
-              üsten: 0
+              üsten: {waschen.ruesten || ''}
             </tspan>
           </text>
           <text
@@ -5537,26 +5492,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            4
-            <tspan x="1476.2px " y="937.8px ">
-              8
-            </tspan>
-          </text>
-          <text
-            x="1503.42px"
-            y="937.8px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            S
-            <tspan
-              x="1524.83px 1532.23px 1549.65px 1565.05px "
-              y="937.8px 937.8px 937.8px 937.8px "
-            >
-              tück
-            </tspan>
+            {waschen.lg || ''} Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
