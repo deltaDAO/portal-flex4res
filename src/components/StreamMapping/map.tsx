@@ -2425,20 +2425,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            1
-            <tspan x="2535.88px 2553.56px " y="358.3px 358.3px ">
-              89
-            </tspan>
-          </text>
-          <text
-            x="2581.1px"
-            y="358.3px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {endMontageD40.pz || ''} s
           </text>
           <text
             x="2384.5px"
@@ -2453,7 +2440,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="2406.86px 2423.21px 2441.58px 2447.93px 2464.28px 2482.65px 2491px 2509.37px 2527.74px 2536.1px 2544.45px "
               y="485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px "
             >
-              chichten: 1
+              chichten: {endMontageD40.schichten || ''}
             </tspan>
           </text>
         </g>
@@ -2491,23 +2478,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            3
-          </text>
-          <text
-            x="2466.51px"
-            y="549.65px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            S
-            <tspan
-              x="2487.82px 2495.11px 2512.43px 2527.73px "
-              y="549.65px 549.65px 549.65px 549.65px "
-            >
-              tück
-            </tspan>
+            {endMontageD40.lg || ''} Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -2535,20 +2506,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            6
-            <tspan x="2533.87px " y="422.06px ">
-              3
-            </tspan>
-          </text>
-          <text
-            x="2560.86px"
-            y="422.06px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {endMontageD40.zz || ''} s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,-1145.64)">
@@ -2977,20 +2935,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            1
-            <tspan x="2535.88px 2553.56px " y="358.3px 358.3px ">
-              89
-            </tspan>
-          </text>
-          <text
-            x="2581.1px"
-            y="358.3px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {endMontageD40.pz || ''} s
           </text>
           <text
             x="2384.5px"
@@ -3005,7 +2950,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="2406.86px 2423.21px 2441.58px 2447.93px 2464.28px 2482.65px 2491px 2509.37px 2527.74px 2536.1px 2544.45px "
               y="485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px "
             >
-              chichten: 1
+              chichten: {endMontageD40.schichten || ''}
             </tspan>
           </text>
         </g>
@@ -3043,23 +2988,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            3
-          </text>
-          <text
-            x="2466.51px"
-            y="549.65px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            S
-            <tspan
-              x="2487.82px 2495.11px 2512.43px 2527.73px "
-              y="549.65px 549.65px 549.65px 549.65px "
-            >
-              tück
-            </tspan>
+            {endMontageD40.lg || ''} Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -3087,20 +3016,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            6
-            <tspan x="2533.87px " y="422.06px ">
-              3
-            </tspan>
-          </text>
-          <text
-            x="2560.86px"
-            y="422.06px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {endMontageD40.zz || ''} s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -6651,23 +6567,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            3
-          </text>
-          <text
-            x="2139.91px"
-            y="936.96px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            S
-            <tspan
-              x="2161.22px 2168.51px 2185.83px 2201.13px "
-              y="936.96px 936.96px 936.96px 936.96px "
-            >
-              tück
-            </tspan>
+            {vormontage.lg || ''} Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -6859,7 +6759,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="2406.86px 2423.21px 2441.58px 2447.93px 2464.28px 2482.65px 2491px 2509.37px 2527.74px 2536.1px 2544.45px "
               y="870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px "
             >
-              chichten: 1
+              chichten: {endMontageD25.schichten || ''}
             </tspan>
           </text>
         </g>
@@ -7309,7 +7209,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="2406.86px 2423.21px 2441.58px 2447.93px 2464.28px 2482.65px 2491px 2509.37px 2527.74px 2536.1px 2544.45px "
               y="870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px "
             >
-              chichten: 1
+              chichten: {endMontageD25.schichten || ''}
             </tspan>
           </text>
         </g>
