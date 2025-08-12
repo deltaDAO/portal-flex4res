@@ -6731,20 +6731,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            6
-            <tspan x="2534.09px " y="806.21px ">
-              0
-            </tspan>
-          </text>
-          <text
-            x="2561.08px"
-            y="806.21px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {endMontageD25.zz || ''} s
           </text>
           <text
             x="2384.5px"
@@ -6797,23 +6784,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            3
-          </text>
-          <text
-            x="2466.51px"
-            y="936.14px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            S
-            <tspan
-              x="2487.82px 2495.11px 2512.43px 2527.73px "
-              y="936.14px 936.14px 936.14px 936.14px "
-            >
-              tück
-            </tspan>
+            {endMontageD25.lg || ''} Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -6841,20 +6812,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            1
-            <tspan x="2535.88px 2553.56px " y="742.2px 742.2px ">
-              80
-            </tspan>
-          </text>
-          <text
-            x="2581.1px"
-            y="742.2px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {endMontageD25.pz || ''} s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,-136.4)">
@@ -7181,20 +7139,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            6
-            <tspan x="2534.09px " y="806.21px ">
-              0
-            </tspan>
-          </text>
-          <text
-            x="2561.08px"
-            y="806.21px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {endMontageD25.zz || ''} s
           </text>
           <text
             x="2384.5px"
@@ -7247,23 +7192,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            3
-          </text>
-          <text
-            x="2466.51px"
-            y="936.14px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            S
-            <tspan
-              x="2487.82px 2495.11px 2512.43px 2527.73px "
-              y="936.14px 936.14px 936.14px 936.14px "
-            >
-              tück
-            </tspan>
+            {endMontageD25.lg || ''} Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -7291,20 +7220,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            1
-            <tspan x="2535.88px 2553.56px " y="742.2px 742.2px ">
-              80
-            </tspan>
-          </text>
-          <text
-            x="2581.1px"
-            y="742.2px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {endMontageD25.pz || ''} s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
