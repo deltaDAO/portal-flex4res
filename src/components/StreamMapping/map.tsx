@@ -61,6 +61,16 @@ export interface MapSVGProps {
   funktionspruefung: {
     pz?: number
     zz?: string
+    scan?: string
+    bzZz?: number
+    schichten?: number
+    ausschuss?: number
+    lg?: string
+  }
+  verpackung: {
+    bz?: number
+    zz?: number
+    schichten?: number
   }
 }
 
@@ -74,7 +84,8 @@ export default function MapSVG(props: MapSVGProps) {
     vormontage,
     endMontageD40,
     endMontageD25,
-    funktionspruefung
+    funktionspruefung,
+    verpackung
   } = props
   return (
     <>
@@ -7277,20 +7288,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            1
-            <tspan x="2781.68px 2799px " y="740.09px 740.09px ">
-              32
-            </tspan>
-          </text>
-          <text
-            x="2827.25px"
-            y="740.09px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {funktionspruefung.pz || ''} s
           </text>
           <text
             x="2711.11px"
@@ -7313,20 +7311,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            4
-            <tspan x="2779.78px " y="803.38px ">
-              4
-            </tspan>
-          </text>
-          <text
-            x="2807.23px"
-            y="803.38px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {funktionspruefung.zz || ''} s
           </text>
           <text
             x="2710.58px"
@@ -7341,7 +7326,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="2732.94px 2749.29px 2767.66px 2774.01px 2790.36px 2808.73px 2817.08px 2835.45px 2853.82px 2862.18px 2870.53px "
               y="970.15px 970.15px 970.15px 970.15px 970.15px 970.15px 970.15px 970.15px 970.15px 970.15px 970.15px "
             >
-              chichten: 1
+              chichten: {funktionspruefung.schichten || ''}
             </tspan>
           </text>
           <text
@@ -7357,7 +7342,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="2731.96px 2749.34px 2764.7px 2780.07px 2795.43px 2812.82px 2830.2px 2845.57px 2860.93px 2879.32px 2896.7px 2914.09px "
               y="1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px "
             >
-              usschuss=10%
+              usschuss={funktionspruefung.ausschuss || ''} %
             </tspan>
           </text>
         </g>
@@ -7761,20 +7746,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            1
-            <tspan x="2781.68px 2799px " y="740.09px 740.09px ">
-              32
-            </tspan>
-          </text>
-          <text
-            x="2827.25px"
-            y="740.09px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {funktionspruefung.pz || ''} s
           </text>
           <text
             x="2711.11px"
@@ -7797,20 +7769,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            4
-            <tspan x="2779.78px " y="803.38px ">
-              4
-            </tspan>
-          </text>
-          <text
-            x="2807.23px"
-            y="803.38px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {funktionspruefung.zz || ''} s
           </text>
           <text
             x="2710.58px"
@@ -7825,7 +7784,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="2732.94px 2749.29px 2767.66px 2774.01px 2790.36px 2808.73px 2817.08px 2835.45px 2853.82px 2862.18px 2870.53px "
               y="970.15px 970.15px 970.15px 970.15px 970.15px 970.15px 970.15px 970.15px 970.15px 970.15px 970.15px "
             >
-              chichten: 1
+              chichten: {funktionspruefung.schichten || ''}
             </tspan>
           </text>
           <text
@@ -7841,7 +7800,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="2731.96px 2749.34px 2764.7px 2780.07px 2795.43px 2812.82px 2830.2px 2845.57px 2860.93px 2879.32px 2896.7px 2914.09px "
               y="1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px "
             >
-              usschuss=10%
+              usschuss= {funktionspruefung.ausschuss || ''} %
             </tspan>
           </text>
         </g>
@@ -7879,23 +7838,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            3
-          </text>
-          <text
-            x="2792.81px"
-            y="1100.57px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            S
-            <tspan
-              x="2814.12px 2821.41px 2838.73px 2854.03px "
-              y="1100.57px 1100.57px 1100.57px 1100.57px "
-            >
-              tück
-            </tspan>
+            {funktionspruefung.lg || ''} Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -7907,10 +7850,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '30px'
             }}
           >
-            2
-            <tspan x="2725.6px " y="848.95px ">
-              x
-            </tspan>
+            {funktionspruefung.scan || ''}
           </text>
           <text
             x="2745.78px"
@@ -7981,23 +7921,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '30px'
             }}
           >
-            c
-            <tspan x="2808.64px 2823.34px " y="920.98px 920.98px ">
-              a.
-            </tspan>
-          </text>
-          <text
-            x="2837.04px"
-            y="920.98px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '30px'
-            }}
-          >
-            1
-            <tspan x="2851.73px 2866.42px " y="920.98px 920.98px ">
-              0s
-            </tspan>
+            {funktionspruefung.bzZz || ''} s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
