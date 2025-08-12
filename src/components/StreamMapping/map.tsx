@@ -8188,20 +8188,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            2
-            <tspan x="3109.28px " y="726.36px ">
-              0
-            </tspan>
-          </text>
-          <text
-            x="3136.59px"
-            y="726.36px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {verpackung.bz || ''} s
           </text>
           <text
             x="3037.73px"
@@ -8216,7 +8203,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="3060.09px 3076.44px 3094.81px 3101.16px 3117.51px 3135.88px 3144.23px 3162.6px 3180.97px 3189.33px 3197.68px "
               y="845.42px 845.42px 845.42px 845.42px 845.42px 845.42px 845.42px 845.42px 845.42px 845.42px 845.42px "
             >
-              chichten: 1
+              chichten: {funktionspruefung.schichten || ''}
             </tspan>
           </text>
         </g>
@@ -8242,20 +8229,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            2
-            <tspan x="3106.4px " y="785.21px ">
-              0
-            </tspan>
-          </text>
-          <text
-            x="3133.85px"
-            y="785.21px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {verpackung.zz || ''} s
           </text>
         </g>
         <g transform="matrix(0.95026,0,0,0.945731,4306.88,793.436)">
@@ -8453,20 +8427,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            2
-            <tspan x="3109.28px " y="726.36px ">
-              0
-            </tspan>
-          </text>
-          <text
-            x="3136.59px"
-            y="726.36px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {verpackung.bz || ''} s
           </text>
           <text
             x="3037.73px"
@@ -8481,7 +8442,7 @@ export default function MapSVG(props: MapSVGProps) {
               x="3060.09px 3076.44px 3094.81px 3101.16px 3117.51px 3135.88px 3144.23px 3162.6px 3180.97px 3189.33px 3197.68px "
               y="845.42px 845.42px 845.42px 845.42px 845.42px 845.42px 845.42px 845.42px 845.42px 845.42px 845.42px "
             >
-              chichten: 1
+              chichten: {funktionspruefung.schichten || ''}
             </tspan>
           </text>
         </g>
@@ -8507,20 +8468,7 @@ export default function MapSVG(props: MapSVGProps) {
               fontSize: '36px'
             }}
           >
-            2
-            <tspan x="3106.4px " y="785.21px ">
-              0
-            </tspan>
-          </text>
-          <text
-            x="3133.85px"
-            y="785.21px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            s
+            {verpackung.zz || ''} s
           </text>
         </g>
         <g transform="matrix(0.95026,0,0,0.945731,4306.88,793.436)">

@@ -18,7 +18,7 @@ export default function ValueStreamMapping() {
       zz: 'ZZ-DR-02',
       rz: 'RZ-DR-01',
       oee: 0.78,
-      schichten: 2,
+      schichten: 5,
       pm: 45,
       lg: 102
     },
@@ -67,7 +67,17 @@ export default function ValueStreamMapping() {
     },
     funktionspruefung: {
       pz: 75,
-      zz: 'ZZ-FP-01'
+      zz: 'ZZ-FP-01',
+      schichten: 2,
+      lg: 'LG-FP-01',
+      bzZz: 20,
+      scan: '5',
+      ausschuss: 10
+    },
+    verpackung: {
+      bz: 30,
+      zz: 25,
+      schichten: 2
     }
   }
   return (
