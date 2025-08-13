@@ -1,0 +1,75 @@
+interface BzZz {
+  bz?: number
+  zz?: string
+}
+
+interface Montage {
+  pz?: number
+  zz?: string
+  schichten?: number
+  lg?: string
+}
+
+export interface VsmData {
+  saegen: {
+    bzD25?: number
+    bzD40?: number
+    zzD25?: number
+    zzD40?: number
+    rz?: string
+    oee?: number
+    schichten?: number
+    lg?: number
+  }
+  drehen: {
+    pz?: number
+    zz?: string
+    rz?: string
+    oee?: number
+    schichten?: number
+    pm?: number
+    lg?: number
+  }
+  fraesen: {
+    pzD25?: number
+    pzD40?: number
+    zzD25?: number
+    zzD40?: number
+    rz?: string
+    oee?: number
+    schichten?: number
+    pm?: number
+    lg?: number
+  }
+  waschen: {
+    zz?: number
+    schichten?: number
+    ruesten?: number
+    lg?: number
+  }
+  messen: {
+    ks: BzZz
+    d25: BzZz
+    d40: BzZz
+    rz: string
+    schichten: number
+    lg: string
+  }
+  vormontage: Montage
+  endMontageD40: Montage
+  endMontageD25: Montage
+  funktionspruefung: {
+    pz?: number
+    zz?: string
+    scan?: string
+    bzZz?: number
+    schichten?: number
+    ausschuss?: number
+    lg?: string
+  }
+  verpackung: {
+    bz?: number
+    zz?: number
+    schichten?: number
+  }
+}

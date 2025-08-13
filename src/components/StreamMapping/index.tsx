@@ -1,8 +1,9 @@
 import Container from '@components/@shared/atoms/Container'
-import MapSVG, { MapSVGProps } from './map'
+import { VsmData } from './_types'
+import MapSVG from './Map'
 
 export default function ValueStreamMapping() {
-  const exampleMapSVGProps: MapSVGProps = {
+  const exampleMapSVGProps: VsmData = {
     saegen: {
       bzD25: 120,
       bzD40: 95,
