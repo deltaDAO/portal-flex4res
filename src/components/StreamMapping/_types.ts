@@ -73,3 +73,19 @@ export interface VsmData {
     schichten?: number
   }
 }
+
+export interface RawRow {
+  Prozess: string
+  Teil?: string
+  Prozesszeit_s?: string
+  PZ_Durchmesser_mm?: string
+  Zykluszeit_s?: string
+  Bearbeitungszeit_s?: string
+  Ruestzeit_s?: string
+  Schichten?: string
+  Losgroesse?: string
+  OEE?: string
+  Prozessmenge?: string
+  Ausschuss?: string
+  Kommentar?: string
+}
