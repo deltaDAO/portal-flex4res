@@ -14,7 +14,7 @@ import styles from './JobList.module.css'
 import { RawRow, VsmData } from './_types'
 import ComputeDownloads from '@components/Profile/History/Downloads'
 import { useProfile } from '@context/Profile'
-import { VSM_ALGO_DIDS } from './_constants'
+import { exampleVSMData, VSM_ALGO_DIDS } from './_constants'
 import { Signer } from 'ethers'
 import { getAccessDetails } from '@utils/accessDetailsAndPricing'
 import Papa from 'papaparse'
@@ -60,6 +60,7 @@ export default function JobList({
       ...asset,
       accessDetails
     }
+    console.log('Full Asset with Access Details:', fullAsset)
     return fullAsset
   }
 
@@ -74,6 +75,7 @@ export default function JobList({
 
   const handleUseIt = async (asset) => {
     const fullAsset = await accessDetails(asset)
+    console.log('Full Asset:', fullAsset)
     let downloadUrl
     try {
       downloadUrl = await ProviderInstance.getDownloadUrl(
@@ -100,12 +102,17 @@ export default function JobList({
   return (
     <div className={styles.accordionWrapper}>
       <Accordion title="Compute Jobs" defaultExpanded>
-        <ComputeDownloads accountId={accountId} />
+        <ComputeDownloads
+          accountId={accountId}
+          onUseCase
+          handleUseIt={handleUseIt}
+          jobs={jobs}
+        />
 
         <div className={styles.actions}>
           <Button
             onClick={() => {
-              handleUseIt(jobs[0].asset)
+              setVsmData(exampleVSMData)
             }}
           >
             Clear Data

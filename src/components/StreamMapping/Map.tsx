@@ -10110,7 +10110,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {saegen.bzD25 || 'not defined'} s
+            {saegen.bzD25 || ''} s
           </text>
           <text
             x="284.21px"
