@@ -1,4 +1,6 @@
 import type { VsmData, RawRow } from './_types'
+import { getAccessDetails } from '@utils/accessDetailsAndPricing'
+import Papa from 'papaparse'
 
 const num = (v?: string) => {
   if (v == null) return undefined
@@ -160,4 +162,27 @@ export function toVsmData(rows: RawRow[]): VsmData {
   }
 
   return vsm
+}
+
+export async function accessDetails(asset, accountId: string) {
+  const accessDetails = await getAccessDetails(
+    asset.chainId,
+    asset.services[0].datatokenAddress,
+    asset.services[0].timeout,
+    accountId
+  )
+  const fullAsset = {
+    ...asset,
+    accessDetails
+  }
+  return fullAsset
+}
+
+export async function getCsv(downloadLink: string): Promise<RawRow[]> {
+  const response = await fetch(downloadLink)
+  const csvData = await response.text()
+  const parsedData = Papa.parse(csvData, {
+    header: true
+  })
+  return parsedData.data as RawRow[]
 }

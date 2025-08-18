@@ -11,14 +11,12 @@ import { useUserPreferences } from '../../@context/UserPreferences'
 import Accordion from '../@shared/Accordion'
 import Button from '../@shared/atoms/Button'
 import styles from './JobList.module.css'
-import { RawRow, VsmData } from './_types'
+import { VsmData } from './_types'
 import ComputeDownloads from '@components/Profile/History/Downloads'
 import { useProfile } from '@context/Profile'
-import { exampleVSMData, VSM_ALGO_DIDS } from './_constants'
+import { exampleVSMData } from './_constants'
 import { Signer } from 'ethers'
-import { getAccessDetails } from '@utils/accessDetailsAndPricing'
-import Papa from 'papaparse'
-import { toVsmData } from './_utils'
+import { accessDetails, getCsv, toVsmData } from './_utils'
 
 export default function JobList({
   setVsmData
@@ -41,42 +39,17 @@ export default function JobList({
   useEffect(() => {
     if (!downloads) return
 
-    const filteredJobs = downloads.filter(
-      (e) => e.asset.id === VSM_ALGO_DIDS[chainIds[0]]
-    )
+    const filteredJobs = downloads.filter((job: DownloadedAsset) => {
+      const tags = job?.asset?.metadata?.tags || []
+      return tags.some((tag: string) => tag?.toLowerCase() === 'vsm')
+    })
 
     setJobs(filteredJobs)
-    console.log('JobList', filteredJobs)
   }, [downloads, chainIds])
 
-  async function accessDetails(asset) {
-    const accessDetails = await getAccessDetails(
-      asset.chainId,
-      asset.services[0].datatokenAddress,
-      asset.services[0].timeout,
-      accountIdToUse
-    )
-    const fullAsset = {
-      ...asset,
-      accessDetails
-    }
-    console.log('Full Asset with Access Details:', fullAsset)
-    return fullAsset
-  }
-
-  async function getCsv(downloadLink): Promise<RawRow[]> {
-    const response = await fetch(downloadLink)
-    const csvData = await response.text()
-    const parsedData = Papa.parse(csvData, {
-      header: true
-    })
-    return parsedData.data as RawRow[]
-  }
-
-  const handleUseIt = async (asset) => {
-    const fullAsset = await accessDetails(asset)
-    console.log('Full Asset:', fullAsset)
-    let downloadUrl
+  const handleUseIt = async (asset: DownloadedAsset) => {
+    const fullAsset = await accessDetails(asset, accountIdToUse)
+    let downloadUrl: string | undefined
     try {
       downloadUrl = await ProviderInstance.getDownloadUrl(
         fullAsset.id,
@@ -91,11 +64,8 @@ export default function JobList({
       LoggerInstance.error('[Provider Get download url] Error:', message)
       toast.error(message)
     }
-    console.log('Use it clicked', { fullAsset, downloadUrl })
     const csvData = await getCsv(downloadUrl)
-    console.log('CSV Data:', csvData)
     const newVsmData = toVsmData(csvData)
-    console.log('New VSM Data:', newVsmData)
     setVsmData(newVsmData)
   }
 
