@@ -20,6 +20,7 @@ export interface VsmData {
     oee?: number
     schichten?: number
     lg?: number
+    kommentar?: string
   }
   drehen: {
     pz?: number
@@ -29,6 +30,7 @@ export interface VsmData {
     schichten?: number
     pm?: number
     lg?: number
+    kommentar?: string
   }
   fraesen: {
     pzD25?: number
@@ -40,6 +42,7 @@ export interface VsmData {
     schichten?: number
     pm?: number
     lg?: number
+    kommentar?: string
   }
   waschen: {
     zz?: number
@@ -48,12 +51,13 @@ export interface VsmData {
     lg?: number
   }
   messen: {
-    ks: BzZz
-    d25: BzZz
-    d40: BzZz
-    rz: string
-    schichten: number
-    lg: string
+    ks?: BzZz
+    d25?: BzZz
+    d40?: BzZz
+    rz?: string
+    schichten?: number
+    lg?: string
+    kommentar?: string
   }
   vormontage: Montage
   endMontageD40: Montage
@@ -61,10 +65,10 @@ export interface VsmData {
   funktionspruefung: {
     pz?: number
     zz?: string
-    scan?: string
+    scan?: number
     bzZz?: number
     schichten?: number
-    ausschuss?: number
+    ausschuss?: string
     lg?: string
   }
   verpackung: {

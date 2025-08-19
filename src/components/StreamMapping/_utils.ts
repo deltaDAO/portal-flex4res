@@ -61,6 +61,7 @@ export function toVsmData(rows: RawRow[]): VsmData {
         vsm.saegen.oee ??= num(row.OEE)
         vsm.saegen.schichten ??= num(row.Schichten)
         vsm.saegen.lg ??= num(row.Losgroesse)
+        vsm.saegen.kommentar ??= row.Kommentar?.trim() || ''
         break
       }
 
@@ -72,6 +73,7 @@ export function toVsmData(rows: RawRow[]): VsmData {
         vsm.drehen.schichten = num(row.Schichten)
         vsm.drehen.pm = num(row.Prozessmenge)
         vsm.drehen.lg = num(row.Losgroesse)
+        vsm.drehen.kommentar = row.Kommentar?.trim() || ''
         break
       }
 
@@ -90,6 +92,7 @@ export function toVsmData(rows: RawRow[]): VsmData {
         vsm.fraesen.schichten ??= num(row.Schichten)
         vsm.fraesen.pm ??= num(row.Prozessmenge)
         vsm.fraesen.lg ??= num(row.Losgroesse)
+        vsm.fraesen.kommentar ??= row.Kommentar?.trim() || ''
         break
       }
 
@@ -115,6 +118,8 @@ export function toVsmData(rows: RawRow[]): VsmData {
         vsm.messen.rz = row.Ruestzeit_s?.trim() ?? vsm.messen.rz ?? ''
         vsm.messen.schichten = num(row.Schichten) ?? vsm.messen.schichten ?? 0
         vsm.messen.lg = row.Losgroesse?.trim() || vsm.messen.lg || ''
+        vsm.messen.kommentar =
+          row.Kommentar?.trim() || vsm.messen.kommentar || ''
         break
       }
 
@@ -141,10 +146,14 @@ export function toVsmData(rows: RawRow[]): VsmData {
       case 'funktionspruefung': {
         vsm.funktionspruefung.pz = num(row.Prozesszeit_s)
         vsm.funktionspruefung.zz = row.Zykluszeit_s?.trim()
-        vsm.funktionspruefung.scan = row.Kommentar?.trim()
-        vsm.funktionspruefung.bzZz = undefined // not derivable from given data
+        vsm.funktionspruefung.scan = parseInt(
+          row.Kommentar?.trim().match(/^\d+/)[0]
+        )
+        vsm.funktionspruefung.bzZz = parseInt(
+          row.Kommentar?.trim().match(/(\d+)\s*s?$/i)[0]
+        )
         vsm.funktionspruefung.schichten = num(row.Schichten)
-        vsm.funktionspruefung.ausschuss = percent(row.Ausschuss)
+        vsm.funktionspruefung.ausschuss = row.Ausschuss
         vsm.funktionspruefung.lg = row.Losgroesse?.trim()
         break
       }

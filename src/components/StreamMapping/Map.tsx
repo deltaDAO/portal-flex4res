@@ -2362,7 +2362,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {endMontageD40.pz || ''} s
+            {endMontageD40.pz || ''}s
           </text>
           <text
             x="2384.5px"
@@ -2415,7 +2415,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {endMontageD40.lg || ''} Stück
+            {endMontageD40.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -2443,7 +2443,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {endMontageD40.zz || ''} s
+            {endMontageD40.zz || ''}s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,-1145.64)">
@@ -2872,7 +2872,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {endMontageD40.pz || ''} s
+            {endMontageD40.pz || ''}s
           </text>
           <text
             x="2384.5px"
@@ -2925,7 +2925,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {endMontageD40.lg || ''} Stück
+            {endMontageD40.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -2953,7 +2953,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {endMontageD40.zz || ''} s
+            {endMontageD40.zz || ''}s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -3087,7 +3087,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {fraesen.pzD25 || ''} s
+            {fraesen.pzD25 || ''}s
           </text>
           <text
             x="773.26px"
@@ -3113,7 +3113,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {fraesen.pzD40 || ''} s
+            {fraesen.pzD40 || ''}s
           </text>
           <text
             x="773.26px"
@@ -3139,7 +3139,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {fraesen.zzD25 || ''} s
+            {fraesen.zzD25 || ''}s
           </text>
           <text
             x="773.26px"
@@ -3165,7 +3165,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36.024px'
             }}
           >
-            {fraesen.zzD40 || ''} s
+            {fraesen.zzD40 || ''}s
           </text>
           <text
             x="773.26px"
@@ -3188,7 +3188,15 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {fraesen.rz || ''}
+            {fraesen.rz || ''}{' '}
+            <tspan
+              style={{
+                fontFamily: "'ArialMT', 'Arial', sans-serif",
+                fontSize: '24px'
+              }}
+            >
+              {fraesen.kommentar || ''}
+            </tspan>
           </text>
           <text
             x="773.26px"
@@ -3253,7 +3261,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {fraesen.pm || ''} Stück
+            {fraesen.pm || ''}Stück
           </text>
           <text
             x="773.26px"
@@ -3276,7 +3284,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {fraesen.lg || ''} Stück
+            {fraesen.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,-188.667)">
@@ -3739,7 +3747,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {fraesen.pzD25 || ''} s
+            {fraesen.pzD25 || ''}s
           </text>
           <text
             x="773.26px"
@@ -3765,7 +3773,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {fraesen.pzD40 || ''} s
+            {fraesen.pzD40 || ''}s
           </text>
           <text
             x="773.26px"
@@ -3791,7 +3799,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {fraesen.zzD25 || ''} s
+            {fraesen.zzD25 || ''}s
           </text>
           <text
             x="773.26px"
@@ -3817,7 +3825,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36.024px'
             }}
           >
-            {fraesen.zzD40 || ''} s
+            {fraesen.zzD40 || ''}s
           </text>
           <text
             x="773.26px"
@@ -3840,7 +3848,15 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {fraesen.rz || ''}
+            {fraesen.rz || ''}{' '}
+            <tspan
+              style={{
+                fontFamily: "'ArialMT', 'Arial', sans-serif",
+                fontSize: '24px'
+              }}
+            >
+              {fraesen.kommentar || ''}
+            </tspan>
           </text>
           <text
             x="773.26px"
@@ -3905,7 +3921,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {fraesen.pm || ''} Stück
+            {fraesen.pm || ''}Stück
           </text>
           <text
             x="773.26px"
@@ -3928,7 +3944,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {fraesen.lg || ''} Stück
+            {fraesen.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -4002,7 +4018,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {drehen.pz || ''} s
+            {drehen.pz || ''}s
           </text>
           <text
             x="773.35px"
@@ -4028,7 +4044,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {drehen.zz || ''} s
+            {drehen.zz || ''}s
           </text>
           <text
             x="773.35px"
@@ -4051,7 +4067,15 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {drehen.rz || ''} s
+            {drehen.rz || ''}s{' '}
+            <tspan
+              style={{
+                fontFamily: "'ArialMT', 'Arial', sans-serif",
+                fontSize: '24px'
+              }}
+            >
+              {drehen.kommentar || ''}
+            </tspan>
           </text>
           <text
             x="773.35px"
@@ -4116,7 +4140,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36.024px'
             }}
           >
-            {drehen.lg || ''} Stück
+            {drehen.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -4141,7 +4165,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {drehen.pm || ''} Stück
+            {drehen.pm || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -4279,7 +4303,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {drehen.pz || ''} s
+            {drehen.pz || ''}s
           </text>
           <text
             x="773.35px"
@@ -4305,7 +4329,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {drehen.zz || ''} s
+            {drehen.zz || ''}s
           </text>
           <text
             x="773.35px"
@@ -4328,7 +4352,15 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {drehen.rz || ''} s
+            {drehen.rz || ''}s {''}
+            <tspan
+              style={{
+                fontFamily: "'ArialMT', 'Arial', sans-serif",
+                fontSize: '24px'
+              }}
+            >
+              {drehen.kommentar || ''}
+            </tspan>
           </text>
           <text
             x="773.35px"
@@ -4393,7 +4425,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36.024px'
             }}
           >
-            {drehen.lg || ''} Stück
+            {drehen.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -4418,7 +4450,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {drehen.pm || ''} Stück
+            {drehen.pm || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,-1279.32)">
@@ -4752,7 +4784,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {drehen.pz || ''} s
+            {drehen.pz || ''}s
           </text>
           <text
             x="773.35px"
@@ -4778,7 +4810,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {drehen.zz || ''} s
+            {drehen.zz || ''}s
           </text>
           <text
             x="773.35px"
@@ -4801,7 +4833,15 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {drehen.rz || ''} s
+            {drehen.rz || ''}s {''}
+            <tspan
+              style={{
+                fontFamily: "'ArialMT', 'Arial', sans-serif",
+                fontSize: '24px'
+              }}
+            >
+              {drehen.kommentar || ''}
+            </tspan>
           </text>
           <text
             x="773.35px"
@@ -4866,7 +4906,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36.024px'
             }}
           >
-            {drehen.lg || ''} Stück
+            {drehen.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -4891,7 +4931,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {drehen.pm || ''} Stück
+            {drehen.pm || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -4932,7 +4972,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {waschen.zz || ''} s
+            {waschen.zz || ''}s
           </text>
           <text
             x="1403.16px"
@@ -4987,7 +5027,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {waschen.lg || ''} Stück
+            {waschen.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -5290,7 +5330,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {waschen.zz || ''} s
+            {waschen.zz || ''}s
           </text>
           <text
             x="1403.16px"
@@ -5345,7 +5385,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {waschen.lg || ''} Stück
+            {waschen.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -5417,10 +5457,10 @@ export default function MapSVG(props: VsmData) {
             y="1065.55px"
             style={{
               fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
+              fontSize: '30px'
             }}
           >
-            {messen.lg || ''} Stück
+            {messen.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -5472,7 +5512,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '27.96px'
             }}
           >
-            {messen.ks.bz || ''} s
+            {messen.ks.bz || ''}s
           </text>
           <text
             x="1879.67px"
@@ -5487,7 +5527,7 @@ export default function MapSVG(props: VsmData) {
               x="1894.2px 1908.73px 1913.94px 1919.61px 1932.61px "
               y="740.98px 740.98px 740.98px 740.98px 740.98px "
             >
-              Z: {messen.ks.zz || ''} s
+              Z: {messen.ks.zz || ''}s
             </tspan>
           </text>
           <text
@@ -5524,7 +5564,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '27.96px'
             }}
           >
-            {messen.d25.bz || ''} s
+            {messen.d25.bz || ''}s
           </text>
           <text
             x="1883.64px"
@@ -5547,7 +5587,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '27.96px'
             }}
           >
-            {messen.d25.zz || ''} s
+            {messen.d25.zz || ''}s
           </text>
           <text
             x="1731.29px"
@@ -5583,7 +5623,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '27.96px'
             }}
           >
-            {messen.d40.bz || ''} s
+            {messen.d40.bz || ''}s
           </text>
           <text
             x="1883.64px"
@@ -5606,7 +5646,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '27.96px'
             }}
           >
-            {messen.d40.zz || ''} s
+            {messen.d40.zz || ''}s
           </text>
           <text
             x="1731.29px"
@@ -5629,7 +5669,15 @@ export default function MapSVG(props: VsmData) {
               fontSize: '27.96px'
             }}
           >
-            {messen.rz || ''} s
+            {messen.rz || ''}s {''}
+            <tspan
+              style={{
+                fontFamily: "'ArialMT', 'Arial', sans-serif",
+                fontSize: '24px'
+              }}
+            >
+              {messen.kommentar || ''}
+            </tspan>
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,35.88)">
@@ -5863,10 +5911,10 @@ export default function MapSVG(props: VsmData) {
             y="1065.55px"
             style={{
               fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
+              fontSize: '28px'
             }}
           >
-            {messen.lg || ''} Stück
+            {messen.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -5918,7 +5966,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '27.96px'
             }}
           >
-            {messen.ks.bz || ''} s
+            {messen.ks.bz || ''}s
           </text>
           <text
             x="1879.67px"
@@ -5933,7 +5981,7 @@ export default function MapSVG(props: VsmData) {
               x="1894.2px 1908.73px 1913.94px 1919.61px 1932.61px "
               y="740.98px 740.98px 740.98px 740.98px 740.98px "
             >
-              Z: {messen.ks.zz || ''} s
+              Z: {messen.ks.zz || ''}s
             </tspan>
           </text>
           <text
@@ -5970,7 +6018,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '27.96px'
             }}
           >
-            {messen.d25.bz || ''} s
+            {messen.d25.bz || ''}s
           </text>
           <text
             x="1883.64px"
@@ -5993,7 +6041,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '27.96px'
             }}
           >
-            {messen.d25.zz || ''} s
+            {messen.d25.zz || ''}s
           </text>
           <text
             x="1731.29px"
@@ -6029,7 +6077,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '27.96px'
             }}
           >
-            {messen.d40.bz || ''} s
+            {messen.d40.bz || ''}s
           </text>
           <text
             x="1883.64px"
@@ -6052,7 +6100,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '27.96px'
             }}
           >
-            {messen.d40.zz || ''} s
+            {messen.d40.zz || ''}s
           </text>
           <text
             x="1731.29px"
@@ -6075,7 +6123,15 @@ export default function MapSVG(props: VsmData) {
               fontSize: '27.96px'
             }}
           >
-            {messen.rz || ''} s
+            {messen.rz || ''}s {''}
+            <tspan
+              style={{
+                fontFamily: "'ArialMT', 'Arial', sans-serif",
+                fontSize: '24px'
+              }}
+            >
+              {messen.kommentar || ''}
+            </tspan>
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -6186,7 +6242,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {vormontage.pz || ''} s
+            {vormontage.pz || ''}s
           </text>
           <text
             x="2057.9px"
@@ -6225,7 +6281,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {vormontage.lg || ''} Stück
+            {vormontage.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -6262,7 +6318,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {vormontage.zz || ''} s
+            {vormontage.zz || ''}s
           </text>
           <text
             x="2154.02px"
@@ -6465,7 +6521,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {vormontage.pz || ''} s
+            {vormontage.pz || ''}s
           </text>
           <text
             x="2057.9px"
@@ -6504,7 +6560,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {vormontage.lg || ''} Stück
+            {vormontage.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -6541,7 +6597,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {vormontage.zz || ''} s
+            {vormontage.zz || ''}s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -6668,7 +6724,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {endMontageD25.zz || ''} s
+            {endMontageD25.zz || ''}s
           </text>
           <text
             x="2384.5px"
@@ -6721,7 +6777,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {endMontageD25.lg || ''} Stück
+            {endMontageD25.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -6749,7 +6805,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {endMontageD25.pz || ''} s
+            {endMontageD25.pz || ''}s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,-136.4)">
@@ -7076,7 +7132,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {endMontageD25.zz || ''} s
+            {endMontageD25.zz || ''}s
           </text>
           <text
             x="2384.5px"
@@ -7129,7 +7185,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {endMontageD25.lg || ''} Stück
+            {endMontageD25.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -7157,7 +7213,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {endMontageD25.pz || ''} s
+            {endMontageD25.pz || ''}s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -7214,7 +7270,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {funktionspruefung.pz || ''} s
+            {funktionspruefung.pz || ''}s
           </text>
           <text
             x="2711.11px"
@@ -7237,7 +7293,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {funktionspruefung.zz || ''} s
+            {funktionspruefung.zz || ''}s
           </text>
           <text
             x="2710.58px"
@@ -7268,7 +7324,7 @@ export default function MapSVG(props: VsmData) {
               x="2731.96px 2749.34px 2764.7px 2780.07px 2795.43px 2812.82px 2830.2px 2845.57px 2860.93px 2879.32px 2896.7px 2914.09px "
               y="1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px "
             >
-              usschuss={funktionspruefung.ausschuss || ''} %
+              usschuss={funktionspruefung.ausschuss || ''}
             </tspan>
           </text>
         </g>
@@ -7672,7 +7728,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {funktionspruefung.pz || ''} s
+            {funktionspruefung.pz || ''}s
           </text>
           <text
             x="2711.11px"
@@ -7695,7 +7751,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {funktionspruefung.zz || ''} s
+            {funktionspruefung.zz || ''}s
           </text>
           <text
             x="2710.58px"
@@ -7726,7 +7782,7 @@ export default function MapSVG(props: VsmData) {
               x="2731.96px 2749.34px 2764.7px 2780.07px 2795.43px 2812.82px 2830.2px 2845.57px 2860.93px 2879.32px 2896.7px 2914.09px "
               y="1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px 1035.84px "
             >
-              usschuss= {funktionspruefung.ausschuss || ''} %
+              usschuss={funktionspruefung.ausschuss || ''}
             </tspan>
           </text>
         </g>
@@ -7764,7 +7820,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {funktionspruefung.lg || ''} Stück
+            {funktionspruefung.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -7776,7 +7832,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '30px'
             }}
           >
-            {funktionspruefung.scan || ''}
+            {funktionspruefung.scan || ''}x
           </text>
           <text
             x="2745.78px"
@@ -7847,7 +7903,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '30px'
             }}
           >
-            {funktionspruefung.bzZz || ''} s
+            {funktionspruefung.bzZz || ''}s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -8114,7 +8170,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {verpackung.bz || ''} s
+            {verpackung.bz || ''}s
           </text>
           <text
             x="3037.73px"
@@ -8155,7 +8211,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {verpackung.zz || ''} s
+            {verpackung.zz || ''}s
           </text>
         </g>
         <g transform="matrix(0.95026,0,0,0.945731,4306.88,793.436)">
@@ -8353,7 +8409,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {verpackung.bz || ''} s
+            {verpackung.bz || ''}s
           </text>
           <text
             x="3037.73px"
@@ -8394,7 +8450,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {verpackung.zz || ''} s
+            {verpackung.zz || ''}s
           </text>
         </g>
         <g transform="matrix(0.95026,0,0,0.945731,4306.88,793.436)">
@@ -9609,7 +9665,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36.024px'
             }}
           >
-            {saegen.zzD40 || ''} s
+            {saegen.zzD40 || ''}s
           </text>
           <text
             x="284.35px"
@@ -9632,7 +9688,15 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {saegen.rz || ''}
+            {saegen.rz || ''} {''}
+            <tspan
+              style={{
+                fontFamily: "'ArialMT', 'Arial', sans-serif",
+                fontSize: '24px'
+              }}
+            >
+              {saegen.kommentar || ''}
+            </tspan>
           </text>
           <text
             x="284.35px"
@@ -9751,7 +9815,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {saegen.zzD25 || ''} s
+            {saegen.zzD25 || ''}s
           </text>
           <text
             x="284.35px"
@@ -9790,7 +9854,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {saegen.lg || ''} Stück
+            {saegen.lg || ''}Stück
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,336.253)">
@@ -10033,7 +10097,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36.024px'
             }}
           >
-            {saegen.zzD40 || ''} s
+            {saegen.zzD40 || ''}s
           </text>
           <text
             x="284.35px"
@@ -10056,7 +10120,15 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {saegen.rz || ''}
+            {saegen.rz || ''} {''}
+            <tspan
+              style={{
+                fontFamily: "'ArialMT', 'Arial', sans-serif",
+                fontSize: '24px'
+              }}
+            >
+              {saegen.kommentar || ''}
+            </tspan>
           </text>
           <text
             x="284.35px"
@@ -10110,7 +10182,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {saegen.bzD25 || ''} s
+            {saegen.bzD25 || ''}s
           </text>
           <text
             x="284.21px"
@@ -10136,7 +10208,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {saegen.bzD40 || ''} s
+            {saegen.bzD40 || ''}s
           </text>
           <text
             x="284.35px"
@@ -10162,7 +10234,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {saegen.zzD25 || ''} s
+            {saegen.zzD25 || ''}s
           </text>
           <text
             x="284.35px"
@@ -10201,7 +10273,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            {saegen.lg || ''} Stück
+            {saegen.lg || ''}Stück
           </text>
         </g>
         <defs>
