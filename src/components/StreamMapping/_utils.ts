@@ -58,7 +58,7 @@ export function toVsmData(rows: RawRow[]): VsmData {
           vsm.saegen.zzD40 = num(row.Zykluszeit_s)
         }
         vsm.saegen.rz ??= row.Ruestzeit_s?.trim()
-        vsm.saegen.oee ??= num(row.OEE)
+        vsm.saegen.oee ??= num(row.OEE) * 100
         vsm.saegen.schichten ??= num(row.Schichten)
         vsm.saegen.lg ??= num(row.Losgroesse)
         vsm.saegen.kommentar ??= row.Kommentar?.trim() || ''
@@ -69,7 +69,7 @@ export function toVsmData(rows: RawRow[]): VsmData {
         vsm.drehen.pz = num(row.Prozesszeit_s)
         vsm.drehen.zz = row.Zykluszeit_s?.trim()
         vsm.drehen.rz = row.Ruestzeit_s?.trim()
-        vsm.drehen.oee = num(row.OEE)
+        vsm.drehen.oee = num(row.OEE) * 100
         vsm.drehen.schichten = num(row.Schichten)
         vsm.drehen.pm = num(row.Prozessmenge)
         vsm.drehen.lg = num(row.Losgroesse)
@@ -88,7 +88,7 @@ export function toVsmData(rows: RawRow[]): VsmData {
           vsm.fraesen.zzD40 = num(row.Zykluszeit_s)
         }
         vsm.fraesen.rz ??= row.Ruestzeit_s?.trim()
-        vsm.fraesen.oee ??= num(row.OEE)
+        vsm.fraesen.oee ??= num(row.OEE) * 100
         vsm.fraesen.schichten ??= num(row.Schichten)
         vsm.fraesen.pm ??= num(row.Prozessmenge)
         vsm.fraesen.lg ??= num(row.Losgroesse)
