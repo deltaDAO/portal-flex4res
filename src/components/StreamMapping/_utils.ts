@@ -10,15 +10,6 @@ const num = (v?: string) => {
   return Number.isFinite(n) ? n : undefined
 }
 
-const percent = (v?: string) => {
-  if (!v) return undefined
-  const m = String(v).match(/([\d.,]+)/)
-  if (!m) return undefined
-  const n = Number(m[1].replace(',', '.'))
-  if (!Number.isFinite(n)) return undefined
-  return n > 1 ? n / 100 : n
-}
-
 const norm = (s?: string) => (s || '').trim().toLowerCase()
 
 export function toVsmData(rows: RawRow[]): VsmData {
@@ -114,7 +105,6 @@ export function toVsmData(rows: RawRow[]): VsmData {
         else if (target === 'D25') setBzZz('d25')
         else if (target === 'D40') setBzZz('d40')
 
-        // Common messen fields (same across its rows)
         vsm.messen.rz = row.Ruestzeit_s?.trim() ?? vsm.messen.rz ?? ''
         vsm.messen.schichten = num(row.Schichten) ?? vsm.messen.schichten ?? 0
         vsm.messen.lg = row.Losgroesse?.trim() || vsm.messen.lg || ''
