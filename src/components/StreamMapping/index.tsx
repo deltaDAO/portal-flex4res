@@ -13,7 +13,7 @@ export default function ValueStreamMapping() {
     <Container>
       <JobList setVsmData={setVsmData} />
       <div className={styles.svgContainer}>
-        <MapSVG {...vsmData} />
+        <MapSVG />
         <MapData {...vsmData} />
       </div>
     </Container>

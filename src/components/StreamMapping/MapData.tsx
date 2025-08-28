@@ -569,6 +569,110 @@ export default function MapData(props: VsmData) {
             {endMontageD25.pz || ''}s
           </text>
         </g>
+        <g transform="matrix(1.33333,0,0,1.33333,0,0)">
+          <text
+            x="2764.35px"
+            y="740.09px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {funktionspruefung.pz || ''}s
+          </text>
+          <text
+            x="2762.59px"
+            y="803.38px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {funktionspruefung.zz || ''}s
+          </text>
+          <text
+            x="2876.53px "
+            y="970.15px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {funktionspruefung.schichten || ''}
+          </text>
+          <text
+            x="2905.09px "
+            y="1035.84px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '30px'
+            }}
+          >
+            {funktionspruefung.ausschuss || ''}
+          </text>
+          <text
+            x="2710.8px"
+            y="848.95px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '30px'
+            }}
+          >
+            {funktionspruefung.scan || ''}x
+          </text>
+          <text
+            x="2795.64px"
+            y="920.98px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '30px'
+            }}
+          >
+            {funktionspruefung.bzZz || ''}s
+          </text>
+          <text
+            x="2766.42px"
+            y="1100.57px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {funktionspruefung.lg || ''}Stück
+          </text>
+        </g>
+        <g transform="matrix(1.33333,0,0,1.33333,0,0)">
+          <text
+            x="3091.95px"
+            y="726.36px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {verpackung.bz || ''}s
+          </text>
+          <text
+            x="3089.21px"
+            y="785.21px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {verpackung.zz || ''}s
+          </text>
+          <text
+            x="3207.73px"
+            y="845.42px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {verpackung.schichten || ''}
+          </text>
+        </g>
       </svg>
     </>
   )
