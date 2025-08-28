@@ -1,7 +1,7 @@
 import { VsmData } from './_types'
 
 export default function MapSVG(props: VsmData) {
-  const { endMontageD40, endMontageD25, funktionspruefung, verpackung } = props
+  const { funktionspruefung, verpackung } = props
   return (
     <>
       <svg
@@ -2344,16 +2344,6 @@ export default function MapSVG(props: VsmData) {
             </tspan>
           </text>
           <text
-            x="2518.2px"
-            y="358.3px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            {endMontageD40.pz || ''}s
-          </text>
-          <text
             x="2384.5px"
             y="485.86px"
             style={{
@@ -2361,13 +2351,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            S
-            <tspan
-              x="2406.86px 2423.21px 2441.58px 2447.93px 2464.28px 2482.65px 2491px 2509.37px 2527.74px 2536.1px 2544.45px "
-              y="485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px "
-            >
-              chichten: {endMontageD40.schichten || ''}
-            </tspan>
+            Schichten:
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -2396,16 +2380,6 @@ export default function MapSVG(props: VsmData) {
               G:
             </tspan>
           </text>
-          <text
-            x="2440.12px"
-            y="549.65px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            {endMontageD40.lg || ''}Stück
-          </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
           <text
@@ -2423,16 +2397,6 @@ export default function MapSVG(props: VsmData) {
             >
               Z(D40):
             </tspan>
-          </text>
-          <text
-            x="2516.22px"
-            y="422.06px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            {endMontageD40.zz || ''}s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,-1145.64)">
@@ -2854,16 +2818,6 @@ export default function MapSVG(props: VsmData) {
             </tspan>
           </text>
           <text
-            x="2518.2px"
-            y="358.3px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            {endMontageD40.pz || ''}s
-          </text>
-          <text
             x="2384.5px"
             y="485.86px"
             style={{
@@ -2871,13 +2825,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            S
-            <tspan
-              x="2406.86px 2423.21px 2441.58px 2447.93px 2464.28px 2482.65px 2491px 2509.37px 2527.74px 2536.1px 2544.45px "
-              y="485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px 485.86px "
-            >
-              chichten: {endMontageD40.schichten || ''}
-            </tspan>
+            Schichten:
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -2906,16 +2854,6 @@ export default function MapSVG(props: VsmData) {
               G:
             </tspan>
           </text>
-          <text
-            x="2440.12px"
-            y="549.65px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            {endMontageD40.lg || ''}Stück
-          </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
           <text
@@ -2933,16 +2871,6 @@ export default function MapSVG(props: VsmData) {
             >
               Z(D40):
             </tspan>
-          </text>
-          <text
-            x="2516.22px"
-            y="422.06px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            {endMontageD40.zz || ''}s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -5980,16 +5908,6 @@ export default function MapSVG(props: VsmData) {
             </tspan>
           </text>
           <text
-            x="2516.44px"
-            y="806.21px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            {endMontageD25.zz || ''}s
-          </text>
-          <text
             x="2384.5px"
             y="870.94px"
             style={{
@@ -5997,13 +5915,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            S
-            <tspan
-              x="2406.86px 2423.21px 2441.58px 2447.93px 2464.28px 2482.65px 2491px 2509.37px 2527.74px 2536.1px 2544.45px "
-              y="870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px "
-            >
-              chichten: {endMontageD25.schichten || ''}
-            </tspan>
+            Schichten:
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -6032,16 +5944,6 @@ export default function MapSVG(props: VsmData) {
               G:
             </tspan>
           </text>
-          <text
-            x="2440.12px"
-            y="936.14px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            {endMontageD25.lg || ''}Stück
-          </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
           <text
@@ -6059,16 +5961,6 @@ export default function MapSVG(props: VsmData) {
             >
               Z(D25):
             </tspan>
-          </text>
-          <text
-            x="2518.2px"
-            y="742.2px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            {endMontageD25.pz || ''}s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,-136.4)">
@@ -6388,16 +6280,6 @@ export default function MapSVG(props: VsmData) {
             </tspan>
           </text>
           <text
-            x="2516.44px"
-            y="806.21px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            {endMontageD25.zz || ''}s
-          </text>
-          <text
             x="2384.5px"
             y="870.94px"
             style={{
@@ -6405,13 +6287,7 @@ export default function MapSVG(props: VsmData) {
               fontSize: '36px'
             }}
           >
-            S
-            <tspan
-              x="2406.86px 2423.21px 2441.58px 2447.93px 2464.28px 2482.65px 2491px 2509.37px 2527.74px 2536.1px 2544.45px "
-              y="870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px 870.94px "
-            >
-              chichten: {endMontageD25.schichten || ''}
-            </tspan>
+            Schichten:
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
@@ -6440,16 +6316,6 @@ export default function MapSVG(props: VsmData) {
               G:
             </tspan>
           </text>
-          <text
-            x="2440.12px"
-            y="936.14px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            {endMontageD25.lg || ''}Stück
-          </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">
           <text
@@ -6467,16 +6333,6 @@ export default function MapSVG(props: VsmData) {
             >
               Z(D25):
             </tspan>
-          </text>
-          <text
-            x="2518.2px"
-            y="742.2px"
-            style={{
-              fontFamily: "'ArialMT', 'Arial', sans-serif",
-              fontSize: '36px'
-            }}
-          >
-            {endMontageD25.pz || ''}s
           </text>
         </g>
         <g transform="matrix(1.33333,0,0,1.33333,0,0)">

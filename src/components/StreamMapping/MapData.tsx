@@ -485,6 +485,90 @@ export default function MapData(props: VsmData) {
             {vormontage.zz || ''}s
           </text>
         </g>
+        <g transform="matrix(1.33333,0,0,1.33333,0,0)">
+          <text
+            x="2518.2px"
+            y="358.3px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {endMontageD40.pz || ''}s
+          </text>
+          <text
+            x="2550.45px "
+            y="485.86px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {endMontageD40.schichten || ''}
+          </text>
+          <text
+            x="2440.12px"
+            y="549.65px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {endMontageD40.lg || ''}Stück
+          </text>
+          <text
+            x="2516.22px"
+            y="422.06px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {endMontageD40.zz || ''}s
+          </text>
+        </g>
+        <g transform="matrix(1.33333,0,0,1.33333,0,0)">
+          <text
+            x="2516.44px"
+            y="806.21px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {endMontageD25.zz || ''}s
+          </text>
+          <text
+            x="2550.45px "
+            y="870.94px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {endMontageD25.schichten || ''}
+          </text>
+          <text
+            x="2440.12px"
+            y="936.14px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {endMontageD25.lg || ''}Stück
+          </text>
+          <text
+            x="2518.2px"
+            y="742.2px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {endMontageD25.pz || ''}s
+          </text>
+        </g>
       </svg>
     </>
   )
