@@ -301,6 +301,190 @@ export default function MapData(props: VsmData) {
             {fraesen.lg || ''}Stück
           </text>
         </g>
+        <g transform="matrix(1.33333,0,0,1.33333,0,0)">
+          <text
+            x="1454.64px"
+            y="742.2px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {waschen.zz || ''}s
+          </text>
+          <text
+            x="1570.11px"
+            y="807.38px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {waschen.schichten || ''}
+          </text>
+          <text
+            x="1530.36px "
+            y="872.59px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {waschen.ruesten || ''}
+          </text>
+          <text
+            x="1458.78px"
+            y="937.8px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {waschen.lg || ''}Stück
+          </text>
+        </g>
+        <g transform="matrix(1.33333,0,0,1.33333,0,0)">
+          <text
+            x="1900.02px "
+            y="1000.8px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {messen.schichten || ''}
+          </text>
+          <text
+            x="1786.69px"
+            y="1065.55px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '30px'
+            }}
+          >
+            {messen.lg || ''}Stück
+          </text>
+          <text
+            x="1807.17px"
+            y="740.98px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '27.96px'
+            }}
+          >
+            {messen.ks.bz || ''}s
+          </text>
+          <text
+            x="1920.61px "
+            y="740.98px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '27.96px'
+            }}
+          >
+            {messen.ks.zz || ''}s
+          </text>
+          <text
+            x="1825.32px"
+            y="804.74px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '27.96px'
+            }}
+          >
+            {messen.d25.bz || ''}s
+          </text>
+          <text
+            x="1923.71px"
+            y="804.74px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '27.96px'
+            }}
+          >
+            {messen.d25.zz || ''}s
+          </text>
+          <text
+            x="1825.32px"
+            y="868.54px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '27.96px'
+            }}
+          >
+            {messen.d40.bz || ''}s
+          </text>
+          <text
+            x="1923.71px"
+            y="868.54px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '27.96px'
+            }}
+          >
+            {messen.d40.zz || ''}s
+          </text>
+          <text
+            x="1773.37px"
+            y="932.33px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '27.96px'
+            }}
+          >
+            {messen.rz || ''}s {''}
+            <tspan
+              style={{
+                fontFamily: "'ArialMT', 'Arial', sans-serif",
+                fontSize: '24px'
+              }}
+            >
+              {messen.kommentar || ''}
+            </tspan>
+          </text>
+        </g>
+        <g transform="matrix(1.33333,0,0,1.33333,0,0)">
+          <text
+            x="2111.14px"
+            y="740.66px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {vormontage.pz || ''}s
+          </text>
+          <text
+            x="2225.85px "
+            y="871.42px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {vormontage.schichten || ''}
+          </text>
+          <text
+            x="2113.52px"
+            y="936.96px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {vormontage.lg || ''}Stück
+          </text>
+          <text
+            x="2109.38px"
+            y="806.21px"
+            style={{
+              fontFamily: "'ArialMT', 'Arial', sans-serif",
+              fontSize: '36px'
+            }}
+          >
+            {vormontage.zz || ''}s
+          </text>
+        </g>
       </svg>
     </>
   )
