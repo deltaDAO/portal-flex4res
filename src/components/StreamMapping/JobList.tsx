@@ -12,11 +12,11 @@ import Accordion from '../@shared/Accordion'
 import Button from '../@shared/atoms/Button'
 import styles from './JobList.module.css'
 import { VsmData } from './_types'
-import ComputeDownloads from '@components/Profile/History/Downloads'
 import { useProfile } from '@context/Profile'
 import { exampleVSMData } from './_constants'
 import { Signer } from 'ethers'
 import { accessDetails, getCsv, toVsmData } from './_utils'
+import VSMDownloads from './DownloadsList'
 
 export default function JobList({
   setVsmData
@@ -47,7 +47,7 @@ export default function JobList({
     setJobs(filteredJobs)
   }, [downloads, chainIds])
 
-  const handleUseIt = async (asset: DownloadedAsset) => {
+  async function handleUseIt(asset: DownloadedAsset) {
     const fullAsset = await accessDetails(asset, accountIdToUse)
     let downloadUrl: string | undefined
     try {
@@ -71,10 +71,9 @@ export default function JobList({
 
   return (
     <div className={styles.accordionWrapper}>
-      <Accordion title="Compute Jobs" defaultExpanded>
-        <ComputeDownloads
+      <Accordion title="Datasets" defaultExpanded>
+        <VSMDownloads
           accountId={accountId}
-          onUseCase
           handleUseIt={handleUseIt}
           jobs={jobs}
         />

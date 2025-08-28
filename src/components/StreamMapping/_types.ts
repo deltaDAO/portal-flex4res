@@ -78,7 +78,8 @@ export interface VsmData {
   }
 }
 
-export interface RawRow {
+export interface CsvRow {
+  // Raw row from CSV
   Prozess: string
   Teil?: string
   Prozesszeit_s?: string

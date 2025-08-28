@@ -1,18 +1,35 @@
-import type { VsmData, RawRow } from './_types'
+import { LoggerInstance } from '@oceanprotocol/lib'
+import type { VsmData, CsvRow } from './_types'
 import { getAccessDetails } from '@utils/accessDetailsAndPricing'
 import Papa from 'papaparse'
+import { toast } from 'react-toastify'
+import * as yup from 'yup'
+import axios from 'axios'
 
-const num = (v?: string) => {
-  if (v == null) return undefined
-  const s = String(v).trim()
-  if (!s) return undefined
-  const n = Number(s.replace(',', '.'))
-  return Number.isFinite(n) ? n : undefined
+function num(value?: string) {
+  return yup
+    .number()
+    .transform((_, originalValue) => {
+      if (originalValue == null) return undefined
+      const trimmedValue = String(originalValue).trim()
+      if (!trimmedValue) return undefined
+      const parsedNumber = Number(trimmedValue.replace(',', '.'))
+      return Number.isFinite(parsedNumber) ? parsedNumber : undefined
+    })
+    .nullable()
+    .validateSync(value)
 }
 
-const norm = (s?: string) => (s || '').trim().toLowerCase()
+function norm(value?: string) {
+  return (value || '').trim().toLowerCase()
+}
 
-export function toVsmData(rows: RawRow[]): VsmData {
+/**
+ * Transforms CSV rows into VSM data format.
+ * @param rows - The CSV rows to transform.
+ * @returns The transformed VSM data.
+ */
+export function toVsmData(rows: CsvRow[]): VsmData {
   const vsm: VsmData = {
     saegen: {},
     drehen: {},
@@ -34,10 +51,10 @@ export function toVsmData(rows: RawRow[]): VsmData {
   }
 
   for (const row of rows) {
-    const p = norm(row.Prozess)
-    if (!p) continue
+    const processName = norm(row.Prozess)
+    if (!processName) continue // Skip empty process names
 
-    switch (p) {
+    switch (processName) {
       case 'sägen':
       case 'saegen': {
         const teil = (row.Teil || '').toUpperCase()
@@ -52,7 +69,7 @@ export function toVsmData(rows: RawRow[]): VsmData {
         vsm.saegen.oee ??= num(row.OEE) * 100
         vsm.saegen.schichten ??= num(row.Schichten)
         vsm.saegen.lg ??= num(row.Losgroesse)
-        vsm.saegen.kommentar ??= row.Kommentar?.trim() || ''
+        vsm.saegen.kommentar ??= row.Kommentar?.trim()
         break
       }
 
@@ -64,7 +81,7 @@ export function toVsmData(rows: RawRow[]): VsmData {
         vsm.drehen.schichten = num(row.Schichten)
         vsm.drehen.pm = num(row.Prozessmenge)
         vsm.drehen.lg = num(row.Losgroesse)
-        vsm.drehen.kommentar = row.Kommentar?.trim() || ''
+        vsm.drehen.kommentar = row.Kommentar?.trim()
         break
       }
 
@@ -83,7 +100,7 @@ export function toVsmData(rows: RawRow[]): VsmData {
         vsm.fraesen.schichten ??= num(row.Schichten)
         vsm.fraesen.pm ??= num(row.Prozessmenge)
         vsm.fraesen.lg ??= num(row.Losgroesse)
-        vsm.fraesen.kommentar ??= row.Kommentar?.trim() || ''
+        vsm.fraesen.kommentar ??= row.Kommentar?.trim()
         break
       }
 
@@ -105,11 +122,10 @@ export function toVsmData(rows: RawRow[]): VsmData {
         else if (target === 'D25') setBzZz('d25')
         else if (target === 'D40') setBzZz('d40')
 
-        vsm.messen.rz = row.Ruestzeit_s?.trim() ?? vsm.messen.rz ?? ''
-        vsm.messen.schichten = num(row.Schichten) ?? vsm.messen.schichten ?? 0
-        vsm.messen.lg = row.Losgroesse?.trim() || vsm.messen.lg || ''
-        vsm.messen.kommentar =
-          row.Kommentar?.trim() || vsm.messen.kommentar || ''
+        vsm.messen.rz = row.Ruestzeit_s?.trim() ?? vsm.messen.rz
+        vsm.messen.schichten = num(row.Schichten) ?? vsm.messen.schichten
+        vsm.messen.lg = row.Losgroesse?.trim() || vsm.messen.lg
+        vsm.messen.kommentar = row.Kommentar?.trim() || vsm.messen.kommentar
         break
       }
 
@@ -137,10 +153,10 @@ export function toVsmData(rows: RawRow[]): VsmData {
         vsm.funktionspruefung.pz = num(row.Prozesszeit_s)
         vsm.funktionspruefung.zz = row.Zykluszeit_s?.trim()
         vsm.funktionspruefung.scan = parseInt(
-          row.Kommentar?.trim().match(/^\d+/)[0]
+          row.Kommentar?.trim().match(/^\d+/)[0] // Extracts leading number
         )
         vsm.funktionspruefung.bzZz = parseInt(
-          row.Kommentar?.trim().match(/(\d+)\s*s?$/i)[0]
+          row.Kommentar?.trim().match(/(\d+)\s*s?$/i)[0] // Extracts trailing number
         )
         vsm.funktionspruefung.schichten = num(row.Schichten)
         vsm.funktionspruefung.ausschuss = row.Ausschuss
@@ -177,11 +193,16 @@ export async function accessDetails(asset, accountId: string) {
   return fullAsset
 }
 
-export async function getCsv(downloadLink: string): Promise<RawRow[]> {
-  const response = await fetch(downloadLink)
-  const csvData = await response.text()
-  const parsedData = Papa.parse(csvData, {
-    header: true
-  })
-  return parsedData.data as RawRow[]
+export async function getCsv(downloadLink: string): Promise<CsvRow[]> {
+  try {
+    const response = await axios.get(downloadLink)
+    const csvData = response.data
+    const parsedData = Papa.parse(csvData, {
+      header: true
+    })
+    return parsedData.data as CsvRow[]
+  } catch (error) {
+    toast.error('Error fetching CSV:', error)
+    LoggerInstance.error('Error fetching CSV:', error)
+  }
 }
