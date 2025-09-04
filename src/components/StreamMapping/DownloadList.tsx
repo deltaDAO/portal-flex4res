@@ -1,4 +1,5 @@
 import {
+  Asset,
   getErrorMessage,
   LoggerInstance,
   ProviderInstance
@@ -10,15 +11,15 @@ import { useAutomation } from '../../@context/Automation/AutomationProvider'
 import { useUserPreferences } from '../../@context/UserPreferences'
 import Accordion from '../@shared/Accordion'
 import Button from '../@shared/atoms/Button'
-import styles from './JobList.module.css'
+import styles from './DownloadList.module.css'
 import { VsmData } from './_types'
 import { useProfile } from '@context/Profile'
 import { exampleVSMData } from './_constants'
 import { Signer } from 'ethers'
 import { accessDetails, getCsv, toVsmData } from './_utils'
-import VSMDownloads from './DownloadsList'
+import VSMDownloads from './Downloads'
 
-export default function JobList({
+export default function DownloadList({
   setVsmData
 }: {
   setVsmData: (vsmData: VsmData) => void
@@ -26,7 +27,8 @@ export default function JobList({
   const { address: accountId } = useAccount()
   const { chainIds } = useUserPreferences()
   const { downloads } = useProfile()
-  const [jobs, setJobs] = useState<DownloadedAsset[]>()
+  const [filteredDownloads, setFilteredDownloads] =
+    useState<DownloadedAsset[]>()
   const [signerToUse, setSignerToUse] = useState<Signer | undefined>()
   const [accountIdToUse, setAccountIdToUse] = useState<string | undefined>()
   const { data: signer } = useSigner()
@@ -39,15 +41,17 @@ export default function JobList({
   useEffect(() => {
     if (!downloads) return
 
-    const filteredJobs = downloads.filter((job: DownloadedAsset) => {
-      const tags = job?.asset?.metadata?.tags || []
-      return tags.some((tag: string) => tag?.toLowerCase() === 'vsm')
-    })
+    const filteredDownloadList = downloads.filter(
+      (download: DownloadedAsset) => {
+        const tags = download?.asset?.metadata?.tags || []
+        return tags.some((tag: string) => tag?.toLowerCase() === 'vsm')
+      }
+    )
 
-    setJobs(filteredJobs)
+    setFilteredDownloads(filteredDownloadList)
   }, [downloads, chainIds])
 
-  async function handleUseIt(asset: DownloadedAsset) {
+  async function handleSelectDataset(asset: Asset) {
     const fullAsset = await accessDetails(asset, accountIdToUse)
     let downloadUrl: string | undefined
     try {
@@ -74,8 +78,8 @@ export default function JobList({
       <Accordion title="Datasets" defaultExpanded>
         <VSMDownloads
           accountId={accountId}
-          handleUseIt={handleUseIt}
-          jobs={jobs}
+          handleSelectDataset={handleSelectDataset}
+          downloads={filteredDownloads}
         />
 
         <div className={styles.actions}>

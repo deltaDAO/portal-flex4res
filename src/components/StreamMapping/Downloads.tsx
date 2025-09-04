@@ -6,15 +6,16 @@ import NetworkName from '@shared/NetworkName'
 import { useProfile } from '@context/Profile'
 import { useUserPreferences } from '@context/UserPreferences'
 import Button from '@components/@shared/atoms/Button'
+import { Asset } from '@oceanprotocol/lib'
 
 export default function VSMDownloads({
   accountId,
-  handleUseIt,
-  jobs
+  handleSelectDataset,
+  downloads
 }: {
   accountId: string
-  handleUseIt?: (asset: DownloadedAsset) => void
-  jobs?: DownloadedAsset[]
+  handleSelectDataset: (asset: Asset) => void
+  downloads: DownloadedAsset[]
 }): ReactElement {
   const { isDownloadsLoading } = useProfile()
   const { chainIds } = useUserPreferences()
@@ -40,7 +41,7 @@ export default function VSMDownloads({
     {
       name: 'Use it',
       selector: (row) => (
-        <Button onClick={() => handleUseIt(row.asset)}>Use it</Button>
+        <Button onClick={() => handleSelectDataset(row.asset)}>Use it</Button>
       )
     }
   ]
@@ -48,7 +49,7 @@ export default function VSMDownloads({
   return accountId ? (
     <Table
       columns={columns}
-      data={jobs}
+      data={downloads}
       paginationPerPage={10}
       isLoading={isDownloadsLoading}
       emptyMessage={chainIds.length === 0 ? 'No network selected' : null}
