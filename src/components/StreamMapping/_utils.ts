@@ -14,7 +14,13 @@ function normalizeNumber(input?: string | number | null): number | undefined {
 }
 
 function normalizeString(value?: string) {
-  return value.trim().toLowerCase() || ''
+function normalizeString(value?: string) {
+  // If value is null, undefined, or an empty string, return '' immediately.
+  if (!value) {
+    return ''
+  }
+  return value.trim().toLowerCase()
+}
 }
 
 /**
