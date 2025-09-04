@@ -39,9 +39,9 @@ export default function VSMDownloads({
       )
     },
     {
-      name: 'Use it',
+      name: 'Select Dataset',
       selector: (row) => (
-        <Button onClick={() => handleSelectDataset(row.asset)}>Use it</Button>
+        <Button onClick={() => handleSelectDataset(row.asset)}>Select</Button>
       )
     }
   ]
