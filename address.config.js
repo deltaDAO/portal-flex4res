@@ -9,7 +9,7 @@ module.exports = {
       '0xb2AF8b92bFaC5299Cb6EDEf16150BFD1d4d26a93',
       '0x3dB4E0b1fC6072271BF51e9a0CC17E3c7C4C99f5',
       '0xDfB0A2BDC779f6053c7ee92601D867ec03A7b47c', // PTW TU Darmstadt
-      '0x3BF11BaC729f5fc3f063bdc78Ee105Eaa11027c7', // PTW TU Darmstadt      
+      '0x3BF11BaC729f5fc3f063bdc78Ee105Eaa11027c7', // PTW TU Darmstadt
       '0x1cb07921EC1362c6394EEECF86959A5DB6797Afe', // Savvy
       '0x28553327C3e469a2De5D53faaE2d27C0c0Fa4d1b', // Ideko
       '0x28553327C3e469a2De5D53faaE2d27C0c0Fa4d1b', // PTW TU Darmstadt
@@ -20,7 +20,8 @@ module.exports = {
       '0xD63fFbB727dc1Bf681F727b78b5F4C738E01f6Db', // Beia
       '0xBA87B2E7F71013Fe6561a877928EA265531B06d1', // TU Wien
       '0x9f4ceE0eBD03a1e9E4DcffaF876873d7a3e9595c', // AMIDS
-      '0x6d006671dA78354C200B03eF5E58F948977362cD' // A1
+      '0x6d006671dA78354C200B03eF5E58F948977362cD', // A1
+      '0xb042E9387f9dcBE2a98e8eeE0fe7e4e694115604' // deltaDAO AG
     ],
     'datatokens.address': []
   },
